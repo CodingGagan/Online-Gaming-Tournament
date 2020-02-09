@@ -1,0 +1,115 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* ************************************* HomePage Carousel ****************************************** */
+
+/* Carousel Inner */
+
+.carousel ol li.active {
+    background-color: #3486cc !important;
+}
+
+.carousel ol li:hover {
+    background-color: blue;
+}
+
+.jumbotron {
+    min-height: 100vh;
+}
+
+.cimg {
+    width: 100%;
+    height: 100%;
+}
+
+.cimg .img-fluid1 {
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-position: center;
+}
+
+#img-1 {
+    background-image: url('slider_img/cod1.jpg');
+}
+
+#img-2 {
+    background-image: url('slider_img/ff2.jpg');
+}
+
+#img-3 {
+    background-image: url('slider_img/fortnite.jpg');
+}
+
+#img-4 {
+    background-image: url('slider_img/freefire.jpg');
+}
+
+.cimg .img-fluid {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.images {
+    position: relative;
+}
+
+.overdiv {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: black;
+    opacity: 0.6;
+    top: 0;
+}
+
+.carousel-caption {
+    position: absolute;
+    top: 30%;
+}
+
+.carousel-caption h3 {
+    font-size: 3.5rem;
+    font-weight: 300;
+    line-height: 1.2;
+}
+
+.pbtn {
+    margin-top: 20px;
+}
+
+.pbtn span {
+    color: white;
+    /* padding-top: 5px; */
+    padding-bottom: 5px;
+    padding-right: 15px;
+    font-size: 20px;
+}
+
+.pbtn .s1 {
+    border-right: 1px solid #fefefe;
+}
+
+/* .pbtn a:hover {
+    background-color: blue !important;
+} */
+
+/***************************** End of HomePage Carousel *************************** */
+
+/* Slider Media Query */
+
+@media (max-width: 576px) {
+    .jumbotron {
+        height: 200vh;
+    }
+    .cimg {
+        width: 100%;
+        height: 100%;
+    }
+    .cimg .img-fluid1 {
+        height: 200vh;
+    }
+}

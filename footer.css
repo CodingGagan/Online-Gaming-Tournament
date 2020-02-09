@@ -1,0 +1,103 @@
+footer h3 {
+    font-size: 23px;
+}
+
+footer ul {
+    text-decoration: none;
+    list-style: none;
+}
+
+footer li {
+    position: relative;
+}
+
+footer a {
+    padding-left: 20px;
+}
+
+.footer-navbar li a {
+    color: white;
+}
+
+footer .footer-navbar a::before {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    height: 8px;
+    width: 8px;
+    left: 6px;
+    transform: rotate(45deg);
+    top: 8px;
+    margin: auto;
+    background: blue;
+}
+
+footer {
+    padding: 4rem 1rem;
+    background: #212830;
+}
+
+footer h3, .card-header a {
+    color: #2b86cc;
+}
+
+/* Accordions */
+
+.card-header {
+    position: relative;
+}
+
+#accordion, .card {
+    background: none !important;
+    border: unset !important;
+}
+
+#accordion .card .collapse a {
+    color: white;
+    padding-left: 10%;
+}
+
+#accordion .card-header a::after {
+    content: "+" !important;
+    position: absolute !important;
+    top: 0px !important;
+    right: 10px !important;
+    font-size: 30px;
+}
+
+#accordion .navbar li {
+    position: relative;
+}
+
+#accordion .navbar-nav .nav-item a::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    height: 8px;
+    width: 8px;
+    top: 17px;
+    transform: rotate(45deg);
+    left: 27px;
+    background: blue;
+}
+
+/* Media Queries */
+
+@media (max-width: 991px) {
+    footer .container-fluid,
+    footer .col-lg-3 {
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
+    footer {
+        padding-left: 0 !important;
+        padding-right:0 !important ;
+    }
+
+    #accordian .collapse li {
+        padding-left: 30px;
+    }
+}
+
+@media (max-width: 767px) {}
