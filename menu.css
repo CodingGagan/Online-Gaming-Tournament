@@ -53,6 +53,7 @@
 .btn_red img {
     vertical-align: sub !important;
 }
+
 /* Button's End */
 
 /* Navbar */
@@ -155,7 +156,6 @@ header .first {
     margin: auto;
 }
 
-
 /* Home Page Media Queries */
 
 @media (max-width: 991px) {
@@ -163,21 +163,49 @@ header .first {
         text-align: center;
         margin: unset;
         clip-path: unset;
+        width: 100% !important;
+        position: relative !important;
+        background: none;
     }
     header .first {
         margin: unset;
     }
     .header_outer_area {
-        background: rgba(0, 0, 0, 0.4);
+        background: none;
         padding-bottom: unset;
-        /* clip-path: polygon(0 0, 100% 0, 94.5% 100%, 5.5% 100%); */
         clip-path: unset;
+        width: 100%;
     }
     .navbar-brand {
         margin: auto;
     }
-
     .bg-pos::after, .bg-pos::before {
         display: none;
+    }
+    /* Navbar Slide from left Style Code */
+    .navbar {
+        width: 100%;
+    }
+    .navbar-collapse {
+        position: absolute;
+        right: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
+        width: 100%;
+        transition: all .3s ease;
+        display: block;
+        background: rgba(0, 0, 0, 0.5);
+        text-align: center;
+    }
+    .navbar-collapse ul {
+        height: auto;
+    }
+    .navbar-collapse.collapsing {
+        height: auto !important;
+        transition: all 0.3s ease;
+        display: block;
+    }
+    .navbar-collapse.show {
+        right: 0%;
     }
 }
