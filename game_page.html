@@ -5,323 +5,533 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Games</title>
     <link rel="stylesheet" href="css/bootstrap.css">
-    <script src="jquery-3.4.1.js"></script>
+    <script src="Jquery/jquery-3.4.1.js"></script>
     <script src="js/bootstrap.js"></script>
     <link rel="stylesheet" href="Font/fontawesome-free-5.12.0-web/css/all.css">
     <link rel="stylesheet" href="menu.css">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="game_page.css">
+    <link rel="stylesheet" href="game.css">
+    <link rel="stylesheet" href="foot.css">
 
     <style>
-        
+
     </style>
 
 </head>
 
 <body>
-
     <!-- Navbar -->
-    <!-- Jumbotron -->
-    <div class="jumbotron p-0 m-0">
+    <div class="header_img_area position-fixed w-100" style="z-index: 10000;">
+        <!-- upper navbar icon -->
 
-        <!-- Navbar -->
-        <div class="header_img_area position-fixed w-100" style="z-index: 10000;">
-            <!-- upper navbar icon -->
+        <div class="primary-navbar" id="primary-navbar">
+            <div class="header-icon">
+                <!-- Social Icon -->
+                <div class="header_social d-inline-block">
+                    <a href="#">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
 
-            <div class="primary-navbar" id="primary-navbar">
-                <div class="header-icon">
-                    <!-- Social Icon -->
-                    <div class="header_social d-inline-block ">
-                        <a href="#">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
-                        <a href="#">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                        <a href="#">
-                            <i class="fab fa-youtube"></i>
-                        </a>
-                        <a href="#">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                    </div>
+                <!-- Login and register place -->
+                <div class="access navbar p-0 pr-5 navbar-expand d-inline-block">
+                    <ul class="navbar-nav">
+                        <!-- Login -->
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <span class="login_icon p-0 pr-3">
+                                    <img src="slider_img/login-icon.png" alt="">
+                                </span>
+                                <span class="login_button">
+                                    Login
+                                </span>
+                            </a>
+                        </li>
 
-                    <!-- Login and register place -->
-                    <div class="access navbar p-0 pr-5 navbar-expand d-inline-block">
-                        <ul class="navbar-nav">
-                            <!-- Login -->
-                            <li class="nav-item">
-                                <a href="#" class="nav-link">
-                                    <span class="login_icon p-0 pr-3">
-                                        <img src="slider_img/login-icon.png" alt="">
-                                    </span>
-                                    <span class="login_button">
-                                        Login
-                                    </span>
-                                </a>
-                            </li>
-
-                            <!-- Register -->
-                            <li class="nav-item">
-                                <a href="#" class="nav-link">
-                                    <span class="reg_icon p-0 pr-3">
-                                        <img src="slider_img/reg-icon.png" alt="">
-                                    </span>
-                                    <span class="reg_button">
-                                        Register
-                                    </span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
+                        <!-- Register -->
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <span class="reg_icon p-0 pr-3">
+                                    <img src="slider_img/reg-icon.png" alt="">
+                                </span>
+                                <span class="reg_button">
+                                    Register
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
             </div>
+        </div>
 
+        <!-- Upper Navbar Icon's -->
+        <!-- This div use for left and right image -->
+        <div class="bg-pos"></div>
+        <div class="header_outer_area">
+            <a id="xs-navbar-brand" href="#" class="navbar-brand nav-brand-xs w-100 d-block position-fixed d-lg-none">
+                <img src="https://www.iglnetwork.com/assets/images/logo.png" class="d-block mx-auto" alt="Brand Image">
+            </a>
+            <header id="navbar-header" class="main-navbar navbar navbar-expand-lg ">
+                <button id="navbar-toggle" class="navbar-toggler navbar-light" data-target='#navbar-hide'
+                    data-toggle="collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-            <!-- Upper Navbar Icon's -->
+                <div class="collapse navbar-collapse" style="top: 54px;" id="navbar-hide">
+                    <!-- <button type="button" class="close" data-dismiss="modal">&times;</button> -->
+                    <ul class="navbar-nav first w-100 m-0">
+                        <div class="left-navbar mx-auto navbar-nav">
+                            <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                            <li class="nav-item"><a href="game_page.html" class="nav-link">Games</a></li>
+                            <li class="nav-item"><a href="tournament.html" class="nav-link">Events</a></li>
+                        </div>
+                    </ul>
+                    <!-- Navbar Brand  -->
+                    <div class="nav-brand-div">
+                        <a href="index.php" class="brnd-pos navbar-brand d-none position-absolute d-lg-block mx-auto">
+                            <img src="https://www.iglnetwork.com/assets/images/logo.png" alt="">
+                        </a>
+                    </div>
+                    <!-- Navbar Right Content when large screen appear -->
 
+                    <ul class="navbar-nav first w-100 m-0">
+                        <div class="right-navbar mx-auto navbar-nav">
+                            <li class="nav-item"><a href="#" class="nav-link">Demo</a></li>
+                            <li class="nav-item"><a href="aboutUsPage.html" class="nav-link">About Us</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
 
-
-            <!-- This div use for left and right image -->
-            <div class="bg-pos"></div>
-            <div class="header_outer_area">
-                <a id="xs-navbar-brand" href="#"
-                    class="navbar-brand nav-brand-xs w-100 d-block position-fixed d-lg-none">
-                    <img src="https://www.iglnetwork.com/assets/images/logo.png" class="d-block mx-auto"
-                        alt="Brand Image">
-                </a>
-                <header id="navbar-header" class="main-navbar navbar navbar-expand-lg ">
-                    <button id="navbar-toggle" class="navbar-toggler navbar-light" data-target='#navbar-hide'
-                        data-toggle="collapse">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-
-                    <div class="collapse navbar-collapse" style="top: 54px;" id="navbar-hide">
-                        <!-- <button type="button" class="close" data-dismiss="modal">&times;</button> -->
-                        <ul class="navbar-nav first w-100 m-0">
-                            <div class="left-navbar text-center navbar-nav" style="margin-left: 20%;">
-                                <li class="nav-item"><a href="Index.html" class="nav-link">Home</a></li>
-                                <li class="nav-item"><a href="game_page.html" class="nav-link" style="color: orangered !important">Games</a></li>
-                                <li class="nav-item"><a href="#" class="nav-link">Events</a></li>
-                            </div>
-                            <!-- Navbar Brand  -->
-                            <li class="nav-item nav-brand-centered position-relative">
-                                <a href="#" class="brnd-pos navbar-brand d-none position-absolute d-lg-block mx-auto">
-                                    <img src="https://www.iglnetwork.com/assets/images/logo.png" alt="">
-                                </a>
-                            </li>
-                            <!-- Navbar Right Content when large screen appear -->
-                            <div class="right-navbar navbar-nav" style="margin-left: 20%;">
-                                <li class="nav-item"><a href="#" class="nav-link">Demo</a></li>
-                                <li class="nav-item"><a href="aboutUsPage.html" class="nav-link">About Us</a></li>
-                                <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
-                            </div>
                             <li class="nav-item"><a href="#" class="nav-link d-lg-none">Login</a></li>
                             <li class="nav-item"><a href="#" class="nav-link d-lg-none">Register</a></li>
-                        </ul>
-                    </div>
-                </header>
-            </div>
+                        </div>
+                    </ul>
+                </div>
+            </header>
         </div>
-        <!-- Navbar End -->
+    </div>
 
-        <!-- primary content -->
-        <div class="primary_game_content jumbotron">
-            <div class="game_content position-relative">
-                <div class="display-3 w-100 text-center text-white">
-                    Let's Find Out With a War
+    <!-- Main Section -->
+    <div class="game_main">
+        <div class="game_main_content text-center">
+            <!-- Main heading and content -->
+            <h1 class="text-white display-4 mt-3">Online Gaming Tournament</h1>
+            <h5 class="text-white p-2"><span class="come">Come</span> <span class="with">with</span></h5>
+            <h1 class="text-white">World's Best Multiplayer Battle Royale</h1>
+            <!-- Slider -->
+            <div class="slide_nameofgame mx-auto">
+                <div class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <h2>Player's Unknown Battle Ground</h2>
+                        </div>
+                        <div class="carousel-item">
+                            <h2>Call of Duty</h2>
+                        </div>
+                        <div class="carousel-item">
+                            <h2>FORTNITE</h2>
+                        </div>
+
+                        <div class="carousel-item">
+                            <h2>Free Fire Arena</h2>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+    </div>
 
 
 
-        <!-- Body Content -->
-        <div class="games_slider container-fluid p-0 m-0">
+    <!-- primary content -->
+    <section class="section-stories">
+        <div class="bg-video">
+            <video class="bg-video__content" autoplay="" muted="" loop="">
+                <source src="Video/s2-hero-vid-desktop.mp4" type="video/mp4">
+                Your Browser doesn't support video !
+            </video>
+        </div>
+        <div class="container p-0 games-section_btn">
+            <div class="row p-0">
+                <div class="col-md-3">
+                    <h2>PUBG Mobile</h2>
+                </div>
+                <div class="col-md-3">
+                    <h2>Fortnite Mobile</h2>
+                </div>
+                <div class="col-md-3">
+                    <h2>COD Mobile</h2>
+                </div>
+                <div class="col-md-3">
+                    <h2>Free Fire</h2>
+                </div>
+            </div>
+        </div>
+        <div class="text-center">
+            <h2 class="video_heading_content display-4">
+                THE WAR RAGES ON.
+            </h2>
+            <p class="w-75 mx-auto">
+                Featuring gritty, grounded,
+                fluid Multiplayer combat,
+                where the universe of player's
+                comes to life in one massive battle royale
+                experience. Soldier up for all-out combat –
+                tailor made for the community.
+            </p>
+        </div>
+    </section>
+
+
+    <section class="current_notify pt-5 pb-5">
+        <div class="content text-center">
+            <h1 class="display-4">Play your game</h1>
+            <p>
+                Currently we are supporting the following games, but more will be added
+                as we move forward.
+            </p>
+        </div>
+    </section>
+
+
+    <!-- Body Content -->
+    <!-- PUBG MOBILE -->
+
+    <!-- PUBG / 1st parallax -->
+    <section class="first-parallax">
+    </section>
+
+    <!-- First game Section -->
+    <section class="game-section game-section-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="left_game-section">
+                        <div class="text_outer-shape"></div>
+                        <div class="text">PUBG</div>
+                        <div class="btn_overlay">
+                            <a href="#" class="btn btn-danger">Get to the play zone</a>
+                        </div>
+                        <div class="overlay">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 right_section">
+                    <div class="right_game-section">
+                        <h2 class="display-4">About The Game</h2>
+                        <p class="text-justify pt-5">
+                            PUBG (Player Unknown's Battle Grounds 2017) is a player-versus-player shooter in which up to
+                            100 players fight to survive in a battle royale match. The game's creator Brendan Greene
+                            pioneered this genre which is a type of large scale, last man standing, deathmatch in which
+                            players fight to be the last alive. Players can choose to enter a match solo, as a duo or
+                            with a small team of up to four people. The game is titled PlayerUnknown after Greene's
+                            alias when he created a battle royale mod called ARMA II for the game Day Z. PUBG is
+                            available on Microsoft Windows, XboxOne, Android, iOS and Playstation 4.
+                        </p>
+
+                        <a href="#" class="btn btn-danger">Find Tournament</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Fortnite / 2nd Parallax -->
+    <section class="second-parallax">
+    </section>
+
+    <!-- FORTNITE MOBILE -->
+    <section class="game-section game-section-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="left_game-section">
+                        <div class="text_outer-shape"></div>
+                        <div class="text">FORTNITE</div>
+                        <div class="btn_overlay">
+                            <a href="#" class="btn btn-danger">Get to the play zone</a>
+                        </div>
+                        <div class="overlay">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 right_section">
+                    <div class="right_game-section">
+                        <h2 class="display-4">About The Game</h2>
+                        <p class="text-justify pt-5">
+                            PUBG (Player Unknown's Battle Grounds 2017) is a player-versus-player shooter in which up to
+                            100 players fight to survive in a battle royale match. The game's creator Brendan Greene
+                            pioneered this genre which is a type of large scale, last man standing, deathmatch in which
+                            players fight to be the last alive. Players can choose to enter a match solo, as a duo or
+                            with a small team of up to four people. The game is titled PlayerUnknown after Greene's
+                            alias when he created a battle royale mod called ARMA II for the game Day Z. PUBG is
+                            available on Microsoft Windows, XboxOne, Android, iOS and Playstation 4.
+                        </p>
+
+                        <a href="#" class="btn btn-danger">Find Tournament</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- COD MOBILE / 3rd parallax  -->
+    <section class="third-parallax">
+    </section>
+
+    <!-- COD MOBILE -->
+    <section class="game-section game-section-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="left_game-section">
+                        <div class="text_outer-shape"></div>
+                        <div class="text">FORTNITE</div>
+                        <div class="btn_overlay">
+                            <a href="#" class="btn btn-danger">Get to the play zone</a>
+                        </div>
+                        <div class="overlay">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 right_section">
+                    <div class="right_game-section">
+                        <h2 class="display-4">About The Game</h2>
+                        <p class="text-justify pt-5">
+                            PUBG (Player Unknown's Battle Grounds 2017) is a player-versus-player shooter in which up to
+                            100 players fight to survive in a battle royale match. The game's creator Brendan Greene
+                            pioneered this genre which is a type of large scale, last man standing, deathmatch in which
+                            players fight to be the last alive. Players can choose to enter a match solo, as a duo or
+                            with a small team of up to four people. The game is titled PlayerUnknown after Greene's
+                            alias when he created a battle royale mod called ARMA II for the game Day Z. PUBG is
+                            available on Microsoft Windows, XboxOne, Android, iOS and Playstation 4.
+                        </p>
+
+                        <a href="#" class="btn btn-danger">Find Tournament</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Free Fire / 4th parallax -->
+    <section class="fourth-parallax">
+
+    </section>
+
+    <!-- Free Fire Mobile -->
+    <section class="game-section game-section-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="left_game-section">
+                        <div class="text_outer-shape"></div>
+                        <div class="text">FORTNITE</div>
+                        <div class="btn_overlay">
+                            <a href="#" class="btn btn-danger">Get to the play zone</a>
+                        </div>
+                        <div class="overlay">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 right_section">
+                    <div class="right_game-section">
+                        <h2 class="display-4">About The Game</h2>
+                        <p class="text-justify pt-5">
+                            PUBG (Player Unknown's Battle Grounds 2017) is a player-versus-player shooter in which up to
+                            100 players fight to survive in a battle royale match. The game's creator Brendan Greene
+                            pioneered this genre which is a type of large scale, last man standing, deathmatch in which
+                            players fight to be the last alive. Players can choose to enter a match solo, as a duo or
+                            with a small team of up to four people. The game is titled PlayerUnknown after Greene's
+                            alias when he created a battle royale mod called ARMA II for the game Day Z. PUBG is
+                            available on Microsoft Windows, XboxOne, Android, iOS and Playstation 4.
+                        </p>
+
+                        <a href="#" class="btn btn-danger">Find Tournament</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <!-- Footer -->
+    <footer>
+        <!-- Icons -->
+        <div class="icons text-white">
+            <ul class="nav">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <i class="fab fa-twitter" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <i class="fab fa-facebook-f" aria-hidden="true"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <hr>
+        <!-- For lg snd up screen -->
+        <div class="container-fluid">
             <div class="row p-0 m-0">
-
-                <!--PUBG-->
-
-
-                <div class="col-md-8 p-0">
-                    <div class="carousel slide carousel-fade" data-ride="carousel" id="aa">
-                        <ol class="carousel-indicators ">
-                            <li data-target="#aa" data-slide-to="0" class="active">1</li>
-                            <li data-target="#aa" data-slide-to="1">2</li>
-                            <li data-target="#aa" data-slide-to="2">3</li>
-                        </ol>
-
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="images/pubg.jpg" alt="">
-                            </div>
-
-                            <div class="carousel-item ">
-                                <img src="images/pubg1.jpg" alt="">
-                            </div>
-
-                            <div class="carousel-item ">
-                                <img src="images/pubg2.jpg" alt="">
-                            </div>
-
-                            <a href="#aa" class="carousel-control-prev " data-slide="prev">
-                                <span class="carousel-control-prev-icon"></span>
-                            </a>
-
-                            <a href="#aa" class="carousel-control-next " data-slide="next">
-                                <span class="carousel-control-next-icon"></span>
-                            </a>
+                <!-- First Column -->
+                <div class="col-lg-3">
+                    <!-- Custom Navbar -> Hide from xs to md devices -->
+                    <div class="custom_navbar d-none d-lg-block">
+                        <h3>OG TOURNAMENT</h3>
+                        <hr>
+                        <div class="footer-navbar">
+                            <ul>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Home</a></li>
+                            </ul>
                         </div>
+                    </div>
 
+                    <!-- Accordions -> Hide on large or wider screen -->
+                    <div id="accordion" class="d-lg-none">
+                        <div class="card">
+                            <div class="card-header">
+                                <a href="#OG" data-toggle="collapse" class="card-link d-block">OG TOURNAMENT</a>
+                            </div>
+                            <div id="OG" class="collapse" data-parent="#accordion">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item"><a href="#" class="nav-link text-white pl-5">Home</a></li>
+                                    <li class="nav-item"><a href="#" class="nav-link pl-5 text-white">Home</a></li>
+                                    <li class="nav-item"><a href="#" class="nav-link pl-5 text-white">Home</a></li>
+                                    <li class="nav-item"><a href="#" class="nav-link pl-5 text-white">Home</a></li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
-                <div class="col-md-4 text-center">
-                    <h2 class="text-secondary" style="font-weight: bold;margin-top: 25%;font-size: 30px;">PLAYER'S
-                        UNKOWN
-                        <br> BATTLEGROUND </h2>
-                    <button class="btn btn-dark btn-block mt-3" style="border-radius: 45px;">KNOW MORE</button>
-
-                </div>
-
-
-
-                <!--FORTNITE-->
-
-
-                <div class="col-md-4 text-center">
-                    <h2 class="text-secondary" style="font-weight: bold;margin-top: 35%;font-size: 30px;">FORTNITE </h2>
-                    <button class="btn btn-dark btn-block mt-3" style="border-radius: 45px;">KNOW MORE</button>
-                </div>
-
-                <div class="col-md-8 p-0 ">
-                    <div class="carousel slide carousel-fade border border-dark" data-ride="carousel" id="bb">
-                        <ol class="carousel-indicators ">
-                            <li data-target="#bb" data-slide-to="0" class="active">1</li>
-                            <li data-target="#bb" data-slide-to="1">2</li>
-                            <li data-target="#bb" data-slide-to="2">3</li>
-                        </ol>
-
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="images/fortnite.jpg" alt="">
-                            </div>
-
-                            <div class="carousel-item ">
-                                <img src="images/fn1.jpg" alt="">
-                            </div>
-
-                            <div class="carousel-item ">
-                                <img src="images/fn2.jpg" alt="">
-                            </div>
-
-                            <a href="#bb" class="carousel-control-prev " data-slide="prev">
-                                <span class="carousel-control-prev-icon"></span>
-                            </a>
-
-                            <a href="#bb" class="carousel-control-next " data-slide="next">
-                                <span class="carousel-control-next-icon"></span>
-                            </a>
+                <!-- Second Column -->
+                <div class="col-lg-3">
+                    <!-- Custom Navbar -> Hide from xs to md devices -->
+                    <div class="custom_navbar d-none d-lg-block">
+                        <h3>COMMUNITY</h3>
+                        <hr>
+                        <div class="footer-navbar">
+                            <ul>
+                                <li><a href="#">About</a></li>
+                                <li><a href="#">Contact Us</a></li>
+                            </ul>
                         </div>
+                    </div>
 
+                    <!-- Accordions -->
+                    <div id="accordion" class="d-lg-none">
+                        <div class="card">
+                            <div class="card-header">
+                                <a href="#community" data-toggle="collapse" class="card-link d-block">COMMUNITY</a>
+                            </div>
+                            <div id="community" class="collapse" data-parent="#accordion">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item"><a href="#" class="nav-link pl-5 text-white">About</a></li>
+                                    <li class="nav-item"><a href="#" class="nav-link pl-5 text-white">Contact Us</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
-
-                <!--FREEFIRE-->
-
-
-                <div class="col-md-8 p-0 ">
-                    <div class="carousel slide carousel-fade border border-dark" data-ride="carousel" id="cc">
-                        <ol class="carousel-indicators ">
-                            <li data-target="#cc" data-slide-to="0" class="active">1</li>
-                            <li data-target="#cc" data-slide-to="1">2</li>
-                            <li data-target="#cc" data-slide-to="2">3</li>
-                        </ol>
-
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="images/freefire.jpg" alt="">
-                            </div>
-
-                            <div class="carousel-item ">
-                                <img src="images/ff1.jpg" alt="">
-                            </div>
-
-                            <div class="carousel-item ">
-                                <img src="images/ff2.jpg" alt="">
-                            </div>
-
-                            <a href="#cc" class="carousel-control-prev " data-slide="prev">
-                                <span class="carousel-control-prev-icon"></span>
-                            </a>
-
-                            <a href="#cc" class="carousel-control-next " data-slide="next">
-                                <span class="carousel-control-next-icon"></span>
-                            </a>
+                <!-- Third Column -->
+                <div class="col-lg-3">
+                    <!-- Custom Navbar -> Hide from xs to md devices -->
+                    <div class="custom_navbar d-none d-lg-block">
+                        <h3>SUPPORT</h3>
+                        <hr>
+                        <div class="footer-navbar">
+                            <ul>
+                                <li><a href="#">Privacy Policy</a></li>
+                                <li><a href="#">Terms of Service</a></li>
+                                <li><a href="#">Legality</a></li>
+                                <li><a href="#">Refund & Cancellation Policy</a></li>
+                            </ul>
                         </div>
+                    </div>
 
+                    <!-- Accordions -->
+                    <div id="accordion" class="d-lg-none">
+                        <div class="card">
+                            <div class="card-header">
+                                <a href="#support" data-toggle="collapse" class="card-link d-block">SUPPORT</a>
+                            </div>
+                            <div id="support" class="collapse" data-parent="#accordion">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item"><a class="nav-link pl-5 text-white" href="#">Privacy Policy</a>
+                                    </li>
+                                    <li class="nav-item"><a class="nav-link pl-5 text-white" href="#">Terms of
+                                            Service</a></li>
+                                    <li class="nav-item"><a class="nav-link pl-5 text-white" href="#">Legality</a></li>
+                                    <li class="nav-item"><a class="nav-link pl-5 text-white" href="#">Refund &
+                                            Cancellation Policy</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
-
-                <div class="col-md-4 text-center">
-                    <h2 class="text-secondary" style="font-weight: bold;margin-top: 35%;font-size: 30px;">FREE FIRE
-                    </h2>
-                    <button class="btn btn-dark btn-block mt-3" style="border-radius: 45px;">KNOW MORE</button>
-                </div>
-
-
-                <!--CALL OF  DUTY-->
-
-
-                <div class="col-md-4 text-center">
-                    <h2 class="text-secondary" style="font-weight: bold;margin-top: 35%;font-size: 30px;">CALL OF DUTY
-                    </h2>
-                    <button class="btn btn-dark btn-block mt-3" style="border-radius: 45px;">KNOW MORE</button>
-                </div>
-
-                <div class="col-md-8 p-0 ">
-                    <div class="carousel slide carousel-fade border border-dark" data-ride="carousel" id="dd">
-                        <ol class="carousel-indicators ">
-                            <li data-target="#dd" data-slide-to="0" class="active">1</li>
-                            <li data-target="#dd" data-slide-to="1">2</li>
-                            <li data-target="#dd" data-slide-to="2">3</li>
-                        </ol>
-
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="images/cod.jpg" alt="">
-                            </div>
-
-                            <div class="carousel-item ">
-                                <img src="images/cod1.jpg" alt="">
-                            </div>
-
-                            <div class="carousel-item ">
-                                <img src="images/cod2.jpg" alt="">
-                            </div>
-
-                            <a href="#dd" class="carousel-control-prev " data-slide="prev">
-                                <span class="carousel-control-prev-icon"></span>
-                            </a>
-
-                            <a href="#dd" class="carousel-control-next " data-slide="next">
-                                <span class="carousel-control-next-icon"></span>
-                            </a>
+                <!-- Fourth Column -->
+                <div class="col-lg-3">
+                    <!-- Custom Navbar -> Hide from xs to md devices -->
+                    <div class="custom_navbar d-none d-lg-block">
+                        <h3>FOLLOW US</h3>
+                        <hr>
+                        <div class="footer-navbar">
+                            <ul>
+                                <li><a href="#">Facebook</a></li>
+                                <li><a href="#">Twitter</a></li>
+                                <li><a href="#">YouTube</a></li>
+                                <li><a href="#">Instagram</a></li>
+                            </ul>
                         </div>
+                    </div>
 
+                    <!-- Accordions -->
+                    <div id="accordion" class="d-lg-none w-100 bg-danger">
+                        <div class="card w-100 bg-danger">
+                            <div class="card-header">
+                                <a href="#follow" data-toggle="collapse" class="card-link d-block">FOLLOW US</a>
+                            </div>
+                            <div id="follow" class="collapse" data-parent="#accordion">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item"><a class="nav-link pl-5 text-white" href="#">Facebook</a></li>
+                                    <li class="nav-item"><a class="nav-link pl-5 text-white" href="#">Twitter</a></li>
+                                    <li class="nav-item"><a class="nav-link pl-5 text-white" href="#">YouTube</a></li>
+                                    <li class="nav-item"><a class="nav-link pl-5 text-white" href="#">Instagram</a></li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
-
-
             </div>
         </div>
+    </footer>
 
-
-        <script src="JavaScript/Home.js"></script>
+    <script src="JavaScript/Home.js"></script>
 </body>
 
 </html>

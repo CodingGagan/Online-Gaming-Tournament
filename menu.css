@@ -62,12 +62,6 @@ header a {
     color: white;
 }
 
-header {
-    background: rgba(0, 0, 0, 0.705);
-    margin: 10px;
-    clip-path: polygon(0 0, 100% 0, 95% 100%, 5% 100%);
-}
-
 /* Upper menu Start */
 
 .primary-navbar {
@@ -96,10 +90,37 @@ header {
 /* Upper menu End */
 
 .header_outer_area {
-    background: rgba(0, 0, 0, 0.4);
-    /* background: red; */
-    padding-bottom: .4px;
-    clip-path: polygon(0 0, 100% 0, 94.5% 100%, 5.5% 100%);
+    background-color: rgba(0, 0, 0, .4);
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+.header_outer_area::before {
+    content: '';
+    width: 0;
+    height: 0;
+    display: block;
+    border-top: 57px solid rgba(0, 0, 0, .4);
+    border-left: 58px solid transparent;
+    margin-left: -58px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.header_outer_area::after {
+    content: '';
+    width: 0;
+    height: 0;
+    display: block;
+    border-top: 57px solid rgba(0, 0, 0, .4);
+    border-right: 58px solid transparent;
+    margin-right: -58px;
+    position: absolute;
+    right: 0;
+    top: 0;
 }
 
 .header_img_area {
@@ -132,49 +153,41 @@ header {
     bottom: -38px;
 }
 
-header .first {
-    margin-left: 30%;
-}
-
-/* Section-Second */
-
-.second-section {
-    background: url(images/sec-2-back-img.png);
-    background-size: cover;
-    background-position: center;
-    padding: 40px 0;
-    text-align: center;
-}
-
-.second-section h4 {
-    color: blue;
-}
-
-.second-section hr {
-    width: 25%;
-    background: black;
-    margin: auto;
+.brnd-pos {
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 /* Home Page Media Queries */
+
+@media (max-width: 1200px) {
+    .leader .card-img {
+        /* width: 30%; */
+        margin: auto;
+    }
+
+    .card-header .card-img {
+        display: block !important;
+    }
+}
 
 @media (max-width: 991px) {
     header {
         text-align: center;
         margin: unset;
-        clip-path: unset;
         width: 100% !important;
         position: relative !important;
         background: none;
     }
-    header .first {
-        margin: unset;
-    }
     .header_outer_area {
         background: none;
         padding-bottom: unset;
-        clip-path: unset;
-        width: 100%;
+        margin: unset;
+        width: 100% !important;
+    }
+    .header_outer_area::before, .header_outer_area::after {
+        display: none;
     }
     .navbar-brand {
         margin: auto;

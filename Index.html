@@ -5,14 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Online Gaming Tournament</title>
     <link rel="stylesheet" href="css/bootstrap.css">
-    <script src="jquery-3.4.1.js"></script>
+    <script src="Jquery/jquery-3.4.1.js"></script>
     <script src="js/bootstrap.js"></script>
     <link rel="stylesheet" href="Font/fontawesome-free-5.12.0-web/css/all.css">
-    <link rel="stylesheet" href="menu.css">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="foot.css">
 </head>
 
 <body>
@@ -29,7 +30,7 @@
             <div class="primary-navbar" id="primary-navbar">
                 <div class="header-icon">
                     <!-- Social Icon -->
-                    <div class="header_social d-inline-block ">
+                    <div class="header_social d-inline-block">
                         <a href="#">
                             <i class="fab fa-facebook-f"></i>
                         </a>
@@ -75,11 +76,7 @@
                 </div>
             </div>
 
-
             <!-- Upper Navbar Icon's -->
-
-
-
             <!-- This div use for left and right image -->
             <div class="bg-pos"></div>
             <div class="header_outer_area">
@@ -97,25 +94,30 @@
                     <div class="collapse navbar-collapse" style="top: 54px;" id="navbar-hide">
                         <!-- <button type="button" class="close" data-dismiss="modal">&times;</button> -->
                         <ul class="navbar-nav first w-100 m-0">
-                            <div class="left-navbar text-center navbar-nav" style="margin-left: 20%;">
-                                <li class="nav-item"><a href="#" class="nav-link" style="color: orangered !important">Home</a></li>
+                            <div class="left-navbar mx-auto navbar-nav">
+                                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
                                 <li class="nav-item"><a href="game_page.html" class="nav-link">Games</a></li>
-                                <li class="nav-item"><a href="#" class="nav-link">Events</a></li>
+                                <li class="nav-item"><a href="tournament.html" class="nav-link">Events</a></li>
                             </div>
-                            <!-- Navbar Brand  -->
-                            <li class="nav-item nav-brand-centered position-relative">
-                                <a href="#" class="brnd-pos navbar-brand d-none position-absolute d-lg-block mx-auto">
-                                    <img src="https://www.iglnetwork.com/assets/images/logo.png" alt="">
-                                </a>
-                            </li>
-                            <!-- Navbar Right Content when large screen appear -->
-                            <div class="right-navbar navbar-nav" style="margin-left: 20%;">
+                        </ul>
+                        <!-- Navbar Brand  -->
+                        <div class="nav-brand-div">
+                            <a href="index.html"
+                                class="brnd-pos navbar-brand d-none position-absolute d-lg-block mx-auto">
+                                <img src="https://www.iglnetwork.com/assets/images/logo.png" alt="">
+                            </a>
+                        </div>
+                        <!-- Navbar Right Content when large screen appear -->
+
+                        <ul class="navbar-nav first w-100 m-0">
+                            <div class="right-navbar mx-auto navbar-nav">
                                 <li class="nav-item"><a href="#" class="nav-link">Demo</a></li>
-                                <li class="nav-item"><a href="aboutUsPage.html" class="nav-link">About Us</a></li>
+                                <li class="nav-item"><a href="aboutUsPage.php" class="nav-link">About Us</a></li>
                                 <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+
+                                <li class="nav-item"><a href="#" class="nav-link d-lg-none">Login</a></li>
+                                <li class="nav-item"><a href="#" class="nav-link d-lg-none">Register</a></li>
                             </div>
-                            <li class="nav-item"><a href="#" class="nav-link d-lg-none">Login</a></li>
-                            <li class="nav-item"><a href="#" class="nav-link d-lg-none">Register</a></li>
                         </ul>
                     </div>
                 </header>
@@ -148,7 +150,8 @@
                                     <div class="overdiv"></div>
                                     <!-- Carousel Caption -->
                                     <div class="carousel-caption">
-                                        <h3 class="">Get Ready for The Online Gaming Tournament</h3>
+                                        <h3 class="d-block mx-auto text-center">Get Ready for The Online Gaming
+                                            Tournament</h3>
                                         <p class="text-center pbtn">
                                             <a href="" class="btn btn_red text-uppercase">
                                                 <span class="s1"><img src="slider_img/button1.png" alt=""></span>
@@ -240,12 +243,13 @@
 
     <!-- Second Section -->
     <div class="second-section">
+
         <div class="container-fluid">
             <div class="row p-0 m-0">
                 <div class="col-md-12">
                     <h1 class="text-center">HOW IT WORKS</h1><br>
                 </div>
-                <div class="col-md-4">
+                <div class="col-lg-4">
                     <img class="d-block mx-auto" src="images/sec-2-img-1.png"><br><br>
                     <h4>SIGN UP TODAY</h4>
                     <hr>
@@ -253,13 +257,13 @@
                         Mobile
                         and Console platforms</p>
                 </div>
-                <div class="col-md-4">
+                <div class="col-lg-4">
                     <img class="d-block mx-auto" src="images/sec-2-img-2.png"><br><br>
                     <h4>COMPLETE IN TOURNAMENTS</h4>
                     <hr>
                     <p>Compete for cash, trophies and bragging rights </p>
                 </div>
-                <div class="col-md-4">
+                <div class="col-lg-4">
                     <img class="d-block mx-auto" src="images/sec-2-img-3.png"><br><br>
                     <h4>WIN & EARN CASH</h4>
                     <hr>
@@ -278,15 +282,696 @@
         </div>
     </div>
 
-    <!-- Second Last Section -->
+    <!--Tabs Section / third-section -->
+    <section class="container third-section">
+        <div class="row">
+            <div class="col-md-12">
+                <ul class="nav nav-tabs">
+                    <li class="nav-item"><a data-toggle="tab" class="nav-link active" href="#pubg">PUBG</a></li>
+                    <li class="nav-item"><a data-toggle="tab" class="nav-link" href="#fortnite-tab">FORTNITE</a></li>
+                    <li class="nav-item"><a data-toggle="tab" class="nav-link" href="#cod-tab">COD MOBILE</a></li>
+                    <li class="nav-item"><a data-toggle="tab" class="nav-link" href="#freefire-tab">FREE FIRE</a></li>
+                </ul>
+
+                <div class="tab-content">
+                    <!-- First Tab -->
+                    <div id="pubg" class="tab-pane active">
+
+                        <div class="tab-inner_heading">
+                            <h2 class="heading-secondary text-center pt-3 pb-3 display-4">
+                                PLAYER'S UNKNOWN BATTLEGROUND
+                            </h2>
+                        </div>
+
+                        <!-- Cards -->
+                        <div class="row">
+                            <div class="col-1-of-3 col-sm-12 col-md-6 col-lg-4">
+                                <div class="flip-card">
+                                    <div class="flip-card-inner">
+                                        <div class="flip-card-front">
+                                            <div class="flip-card__image flip-card__image--1">
+
+                                            </div>
+                                            <div class="flip-card__heading">
+                                                <h3>
+                                                    <span class="flip-card__heading--span flip-card__heading--span-1">
+                                                        Player's Unknown Battleground
+                                                    </span>
+                                                </h3>
+                                            </div>
+                                            <div class="flip-card__details">
+                                                <ul>
+                                                    <li>Date:- 10/02/2020</li>
+                                                    <li>Prize: OnePlusT</li>
+                                                    <li>Premium: Solo</li>
+                                                    <li>Game: PUBG MOBILE</li>
+                                                    <li>Teams Joined: 34/64</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="flip-card-back flip-card-back-1">
+                                            <div class="flip-card__cta">
+                                                <div class="flip-card__price--box">
+                                                    <p class="flip-card__price--only">Only</p>
+                                                    <p class="flip-card__price--value">₹20790</p>
+                                                </div>
+                                                <a href="#popup" class="btn btn-white">Book Now!</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Second Row of Row -->
+                            <div class="col-1-of-3 col-sm-12 col-md-6 col-lg-4">
+                                <div class="flip-card">
+                                    <div class="flip-card-inner">
+                                        <div class="flip-card-front">
+                                            <div class="flip-card__image flip-card__image--2">
+
+                                            </div>
+                                            <div class="flip-card__heading">
+                                                <h3>
+                                                    <span class="flip-card__heading--span flip-card__heading--span-2">
+                                                        FORTNITE BATTLE ROYALE
+                                                    </span>
+                                                </h3>
+                                            </div>
+                                            <div class="flip-card__details">
+                                                <ul>
+                                                    <li>Date:- 10/02/2020</li>
+                                                    <li>Prize: OnePlusT</li>
+                                                    <li>Premium: Solo</li>
+                                                    <li>Game: PUBG MOBILE</li>
+                                                    <li>Teams Joined: 34/64</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="flip-card-back flip-card-back-2">
+                                            <div class="flip-card__cta">
+                                                <div class="flip-card__price--box">
+                                                    <p class="flip-card__price--only">Only</p>
+                                                    <p class="flip-card__price--value">₹34790</p>
+                                                </div>
+                                                <a href="#popup" class="btn btn-white">Book Now!</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- #3rd row of row -->
+                            <div class="col-1-of-3 col-sm-12 col-md-6 col-lg-4">
+                                <div class="flip-card">
+                                    <div class="flip-card-inner">
+                                        <div class="flip-card-front">
+                                            <div class="flip-card__image flip-card__image--3">
+
+                                            </div>
+                                            <div class="flip-card__heading">
+                                                <h3>
+                                                    <span class="flip-card__heading--span flip-card__heading--span-3">
+                                                        SURVIVAL BATTLE FREE FIRE
+                                                    </span>
+                                                </h3>
+                                            </div>
+                                            <div class="flip-card__details">
+                                                <ul>
+                                                    <li>Date:- 10/02/2020</li>
+                                                    <li>Prize: OnePlusT</li>
+                                                    <li>Premium: Solo</li>
+                                                    <li>Game: PUBG MOBILE</li>
+                                                    <li>Teams Joined: 34/64</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="flip-card-back flip-card-back-3">
+                                            <div class="flip-card__cta">
+                                                <div class="flip-card__price--box">
+                                                    <p class="flip-card__price--only">Only</p>
+                                                    <p class="flip-card__price--value">₹62790</p>
+                                                </div>
+                                                <a href="#popup" class="btn btn-white">Book Now!</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Second Tabs -->
+                    <div id="fortnite-tab" class="tab-pane fade">
+
+                        <div class="tab-inner_heading">
+                            <h2 class="heading-secondary text-center pt-3 pb-3 display-4">
+                                BATTLE ROYALE FORTNITE MOBILE
+                            </h2>
+                        </div>
+
+                        <!-- Cards -->
+                        <div class="row">
+                            <div class="col-1-of-3 col-md-4">
+                                <div class="flip-card">
+                                    <div class="flip-card-inner">
+                                        <div class="flip-card-front">
+                                            <div class="flip-card__image flip-card__image--1">
+
+                                            </div>
+                                            <div class="flip-card__heading">
+                                                <h3>
+                                                    <span class="flip-card__heading--span flip-card__heading--span-1">
+                                                        Player's Unknown Battleground
+                                                    </span>
+                                                </h3>
+                                            </div>
+                                            <div class="flip-card__details">
+                                                <ul>
+                                                    <li>Date:- 10/02/2020</li>
+                                                    <li>Prize: OnePlusT</li>
+                                                    <li>Premium: Solo</li>
+                                                    <li>Game: PUBG MOBILE</li>
+                                                    <li>Teams Joined: 34/64</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="flip-card-back flip-card-back-1">
+                                            <div class="flip-card__cta">
+                                                <div class="flip-card__price--box">
+                                                    <p class="flip-card__price--only">Only</p>
+                                                    <p class="flip-card__price--value">₹20790</p>
+                                                </div>
+                                                <a href="#popup" class="btn btn-white">Book Now!</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Second Row of Row -->
+                            <div class="col-1-of-3 col-md-4">
+                                <div class="flip-card">
+                                    <div class="flip-card-inner">
+                                        <div class="flip-card-front">
+                                            <div class="flip-card__image flip-card__image--2">
+
+                                            </div>
+                                            <div class="flip-card__heading">
+                                                <h3>
+                                                    <span class="flip-card__heading--span flip-card__heading--span-2">
+                                                        FORTNITE BATTLE ROYALE
+                                                    </span>
+                                                </h3>
+                                            </div>
+                                            <div class="flip-card__details">
+                                                <ul>
+                                                    <li>Date:- 10/02/2020</li>
+                                                    <li>Prize: OnePlusT</li>
+                                                    <li>Premium: Solo</li>
+                                                    <li>Game: PUBG MOBILE</li>
+                                                    <li>Teams Joined: 34/64</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="flip-card-back flip-card-back-2">
+                                            <div class="flip-card__cta">
+                                                <div class="flip-card__price--box">
+                                                    <p class="flip-card__price--only">Only</p>
+                                                    <p class="flip-card__price--value">₹34790</p>
+                                                </div>
+                                                <a href="#popup" class="btn btn-white">Book Now!</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- #3rd row of row -->
+                            <div class="col-1-of-3 col-md-4">
+                                <div class="flip-card">
+                                    <div class="flip-card-inner">
+                                        <div class="flip-card-front">
+                                            <div class="flip-card__image flip-card__image--3">
+
+                                            </div>
+                                            <div class="flip-card__heading">
+                                                <h3>
+                                                    <span class="flip-card__heading--span flip-card__heading--span-3">
+                                                        SURVIVAL BATTLE FREE FIRE
+                                                    </span>
+                                                </h3>
+                                            </div>
+                                            <div class="flip-card__details">
+                                                <ul>
+                                                    <li>Date:- 10/02/2020</li>
+                                                    <li>Prize: OnePlusT</li>
+                                                    <li>Premium: Solo</li>
+                                                    <li>Game: PUBG MOBILE</li>
+                                                    <li>Teams Joined: 34/64</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="flip-card-back flip-card-back-3">
+                                            <div class="flip-card__cta">
+                                                <div class="flip-card__price--box">
+                                                    <p class="flip-card__price--only">Only</p>
+                                                    <p class="flip-card__price--value">₹62790</p>
+                                                </div>
+                                                <a href="#popup" class="btn btn-white">Book Now!</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Third Tabs -->
+                    <div id="cod-tab" class="tab-pane fade">
+
+                        <div class="tab-inner_heading">
+                            <h2 class="heading-secondary text-center pt-3 pb-3 display-4">
+                                CALL OF DUTY MOBILE
+                            </h2>
+                        </div>
+
+                        <!-- Cards -->
+                        <div class="row">
+                            <div class="col-1-of-3 col-md-4">
+                                <div class="flip-card">
+                                    <div class="flip-card-inner">
+                                        <div class="flip-card-front">
+                                            <div class="flip-card__image flip-card__image--1">
+
+                                            </div>
+                                            <div class="flip-card__heading">
+                                                <h3>
+                                                    <span class="flip-card__heading--span flip-card__heading--span-1">
+                                                        Player's Unknown Battleground
+                                                    </span>
+                                                </h3>
+                                            </div>
+                                            <div class="flip-card__details">
+                                                <ul>
+                                                    <li>Date:- 10/02/2020</li>
+                                                    <li>Prize: OnePlusT</li>
+                                                    <li>Premium: Solo</li>
+                                                    <li>Game: PUBG MOBILE</li>
+                                                    <li>Teams Joined: 34/64</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="flip-card-back flip-card-back-1">
+                                            <div class="flip-card__cta">
+                                                <div class="flip-card__price--box">
+                                                    <p class="flip-card__price--only">Only</p>
+                                                    <p class="flip-card__price--value">₹20790</p>
+                                                </div>
+                                                <a href="#popup" class="btn btn-white">Book Now!</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Second Row of Row -->
+                            <div class="col-1-of-3 col-md-4">
+                                <div class="flip-card">
+                                    <div class="flip-card-inner">
+                                        <div class="flip-card-front">
+                                            <div class="flip-card__image flip-card__image--2">
+
+                                            </div>
+                                            <div class="flip-card__heading">
+                                                <h3>
+                                                    <span class="flip-card__heading--span flip-card__heading--span-2">
+                                                        FORTNITE BATTLE ROYALE
+                                                    </span>
+                                                </h3>
+                                            </div>
+                                            <div class="flip-card__details">
+                                                <ul>
+                                                    <li>Date:- 10/02/2020</li>
+                                                    <li>Prize: OnePlusT</li>
+                                                    <li>Premium: Solo</li>
+                                                    <li>Game: PUBG MOBILE</li>
+                                                    <li>Teams Joined: 34/64</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="flip-card-back flip-card-back-2">
+                                            <div class="flip-card__cta">
+                                                <div class="flip-card__price--box">
+                                                    <p class="flip-card__price--only">Only</p>
+                                                    <p class="flip-card__price--value">₹34790</p>
+                                                </div>
+                                                <a href="#popup" class="btn btn-white">Book Now!</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- #3rd row of row -->
+                            <div class="col-1-of-3 col-md-4">
+                                <div class="flip-card">
+                                    <div class="flip-card-inner">
+                                        <div class="flip-card-front">
+                                            <div class="flip-card__image flip-card__image--3">
+
+                                            </div>
+                                            <div class="flip-card__heading">
+                                                <h3>
+                                                    <span class="flip-card__heading--span flip-card__heading--span-3">
+                                                        SURVIVAL BATTLE FREE FIRE
+                                                    </span>
+                                                </h3>
+                                            </div>
+                                            <div class="flip-card__details">
+                                                <ul>
+                                                    <li>Date:- 10/02/2020</li>
+                                                    <li>Prize: OnePlusT</li>
+                                                    <li>Premium: Solo</li>
+                                                    <li>Game: PUBG MOBILE</li>
+                                                    <li>Teams Joined: 34/64</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="flip-card-back flip-card-back-3">
+                                            <div class="flip-card__cta">
+                                                <div class="flip-card__price--box">
+                                                    <p class="flip-card__price--only">Only</p>
+                                                    <p class="flip-card__price--value">₹62790</p>
+                                                </div>
+                                                <a href="#popup" class="btn btn-white">Book Now!</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Fourth Tabs -->
+                    <div id="freefire-tab" class="tab-pane fade">
+
+                        <div class="tab-inner_heading">
+                            <h2 class="heading-secondary text-center pt-3 pb-3 display-4">
+                                SURVIVAL BATTLE: GARENA FREE FIRE
+                            </h2>
+                        </div>
+
+                        <!-- Cards -->
+                        <div class="row">
+                            <div class="col-1-of-3 col-md-4">
+                                <div class="flip-card">
+                                    <div class="flip-card-inner">
+                                        <div class="flip-card-front">
+                                            <div class="flip-card__image flip-card__image--1">
+
+                                            </div>
+                                            <div class="flip-card__heading">
+                                                <h3>
+                                                    <span class="flip-card__heading--span flip-card__heading--span-1">
+                                                        Player's Unknown Battleground
+                                                    </span>
+                                                </h3>
+                                            </div>
+                                            <div class="flip-card__details">
+                                                <ul>
+                                                    <li>Date:- 10/02/2020</li>
+                                                    <li>Prize: OnePlusT</li>
+                                                    <li>Premium: Solo</li>
+                                                    <li>Game: PUBG MOBILE</li>
+                                                    <li>Teams Joined: 34/64</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="flip-card-back flip-card-back-1">
+                                            <div class="flip-card__cta">
+                                                <div class="flip-card__price--box">
+                                                    <p class="flip-card__price--only">Only</p>
+                                                    <p class="flip-card__price--value">₹20790</p>
+                                                </div>
+                                                <a href="#popup" class="btn btn-white">Book Now!</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Second Row of Row -->
+                            <div class="col-1-of-3 col-md-4">
+                                <div class="flip-card">
+                                    <div class="flip-card-inner">
+                                        <div class="flip-card-front">
+                                            <div class="flip-card__image flip-card__image--2">
+
+                                            </div>
+                                            <div class="flip-card__heading">
+                                                <h3>
+                                                    <span class="flip-card__heading--span flip-card__heading--span-2">
+                                                        FORTNITE BATTLE ROYALE
+                                                    </span>
+                                                </h3>
+                                            </div>
+                                            <div class="flip-card__details">
+                                                <ul>
+                                                    <li>Date:- 10/02/2020</li>
+                                                    <li>Prize: OnePlusT</li>
+                                                    <li>Premium: Solo</li>
+                                                    <li>Game: PUBG MOBILE</li>
+                                                    <li>Teams Joined: 34/64</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="flip-card-back flip-card-back-2">
+                                            <div class="flip-card__cta">
+                                                <div class="flip-card__price--box">
+                                                    <p class="flip-card__price--only">Only</p>
+                                                    <p class="flip-card__price--value">₹34790</p>
+                                                </div>
+                                                <a href="#popup" class="btn btn-white">Book Now!</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- #3rd row of row -->
+                            <div class="col-1-of-3 col-md-4">
+                                <div class="flip-card">
+                                    <div class="flip-card-inner">
+                                        <div class="flip-card-front">
+                                            <div class="flip-card__image flip-card__image--3">
+
+                                            </div>
+                                            <div class="flip-card__heading">
+                                                <h3>
+                                                    <span class="flip-card__heading--span flip-card__heading--span-3">
+                                                        SURVIVAL BATTLE FREE FIRE
+                                                    </span>
+                                                </h3>
+                                            </div>
+                                            <div class="flip-card__details">
+                                                <ul>
+                                                    <li>Date:- 10/02/2020</li>
+                                                    <li>Prize: OnePlusT</li>
+                                                    <li>Premium: Solo</li>
+                                                    <li>Game: PUBG MOBILE</li>
+                                                    <li>Teams Joined: 34/64</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="flip-card-back flip-card-back-3">
+                                            <div class="flip-card__cta">
+                                                <div class="flip-card__price--box">
+                                                    <p class="flip-card__price--only">Only</p>
+                                                    <p class="flip-card__price--value">₹62790</p>
+                                                </div>
+                                                <a href="#popup" class="btn btn-white">Book Now!</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
+    <!-- Fourth Section / Parallax -->
+    <section class="fourth-section">
+        <div class="container-fluid p-0 m-0">
+            <div class="row m-0 p-0">
+                <div class="col-md-6 pl-5">
+                    <div class="left-content">
+                        <h5>PARTICIPATE IN FREE TOURNAMENTS</h5>
+                        <h2>Play and Win Cash Prizes!</h2>
+                        <p>
+                            PlayMonk is offering its users a wide variety of free tournaments to participate in. All you
+                            have to
+                            do is register, browse and find tournament for your favorite game!
+                        </p>
+                        <p>
+                            The best part? Entry for official PlayMonk tournaments is free! Drop into the battlegrounds
+                            today
+                            and start dominating your opponents! Win cash prizes in games like PUBG Mobile and Fortnite
+                            by
+                            playing for free!
+                        </p>
+                    </div>
+                    <button class="btn text-white btn-lg" style="background: #fe0000;">Browse Tournament</button>
+                </div>
+                <div class="col-md-6">
+                    <div class="right-img">
+                        <img src="images/characters-ghost.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- LeaderBoards -->
+    <section class="leader">
+        <div class="container-fluid p-0 m-0">
+            <div class="row m-0 p-0">
+                <div class="col-md-12">
+                    <h2 class="display-4 pt-4 pb-4">LEADERBOARD TALENTS</h2>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="leader-card-1 mx-auto card">
+                        <div class="card-header">
+                            <div class='card-img d-inline-block'>
+                                <img src="images/leader-1.jpg" class="" alt="">
+                            </div>
+                            <div class="card card-text">
+                                <span class="d-block">Raghav Sharma</span>
+                                <span class="d-block">[FFyh987]</span>
+                                <span class="d-block">23 yrs, Amritsar</span>
+                            </div>
+                        </div>
+                        <div class="card-body position-relative">
+                            <div class="card-img-propic position-absolute">
+                                <img src="images/major-badge-7.png" alt="">
+                            </div>
+                            <div class="card-title mt-5">
+                                <hr id="leader-hr" class="leader-hr-1">
+                                <div class="card-title">
+                                    <span>
+                                        <h5>1200</h5>
+                                    </span>
+                                </div>
+                                <div class="card-subtitle">
+                                    <span>
+                                        <h5>RATING POINT</h5>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="leader-rank">
+                        RANK <span>#2</span>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="leader-card-2 mx-auto card">
+                        <div class="card-header">
+                            <div class='card-img d-inline-block'>
+                                <img src="images/leader-1.jpg" class="" alt="">
+                            </div>
+                            <div class="card card-text">
+                                <span class="d-block">Neeraj Khorishi</span>
+                                <span class="d-block">[COD098uJ]</span>
+                                <span class="d-block">21 yrs, Amritsar</span>
+                            </div>
+                        </div>
+                        <div class="card-body position-relative">
+                            <div class="card-img-propic position-absolute">
+                                <img src="images/major-badge-7.png" alt="">
+                            </div>
+                            <div class="card-title mt-5">
+                                <hr id="leader-hr" class="leader-hr-2">
+                                <div class="card-title">
+                                    <span>
+                                        <h5>1300</h5>
+                                    </span>
+                                </div>
+                                <div class="card-subtitle">
+                                    <span>
+                                        <h5>RATING POINT</h5>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="leader-rank-1">
+                        RANK <span>#1</span>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="leader-card-3 mx-auto card">
+                        <div class="card-header">
+                            <div class='card-img d-inline-block'>
+                                <img src="images/leader-1.jpg" class="" alt="">
+                            </div>
+                            <div class="card card-text">
+                                <span class="d-block">Amandeep Singh</span>
+                                <span class="d-block">[PUNGuu8uJ]</span>
+                                <span class="d-block">19 yrs, Mohali</span>
+                            </div>
+                        </div>
+                        <div class="card-body position-relative">
+                            <div class="card-img-propic position-absolute">
+                                <img src="images/major-badge-7.png" alt="">
+                            </div>
+                            <div class="card-title mt-5">
+                                <hr id="leader-hr" class="leader-hr-3">
+                                <div class="card-title">
+                                    <span>
+                                        <h5>1090</h5>
+                                    </span>
+                                </div>
+                                <div class="card-subtitle">
+                                    <span>
+                                        <h5>RATING POINT</h5>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="leader-rank-3">
+                        RANK <span>#3</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
+    <!-- Fifth Section -->
+    <section class="fifth-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="left-content-img">
+                        <!-- <img src="images/center-soldier-cod.png" height="100" alt=""> -->
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="right-content">
+                        <h5>
+                            <span class="d-block display-4">Jump into the world of Gaming War.</span>
+                            <span class="d-block pt-3 pb-3">Fight and Stay Alive !</span>
+                            <span class="d-block">Till the end.</span>
+                        </h5>
+                    </div>
+                    <button class="btn">Sign up for Battle Royale</button>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Footer -->
+    <!-- Footer -->
     <footer>
-
         <!-- For lg snd up screen -->
         <div class="container-fluid">
             <div class="row p-0 m-0">
@@ -429,9 +1114,6 @@
             </div>
         </div>
     </footer>
-
-
-    <!-- Footer -->
     <script src="JavaScript/Home.js"></script>
 </body>
 
