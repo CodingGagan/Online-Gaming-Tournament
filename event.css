@@ -1,0 +1,125 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html, body {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    padding: 0 20px;
+}
+
+/* Body section */
+
+body {
+    height: 100vh;
+    background: url(images/pubg2.jpg);
+    background-size: cover;
+    background-position: center top;
+    background-attachment: fixed;
+}
+
+/* first main container */
+
+.event_main_page {
+    margin-top: 60vh;
+    min-height: 80vh;
+    position: relative;
+}
+
+.event_main_page .pro_pic_section, .profile_img {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    top: -10%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.profile_img img {
+    height: 100%;
+    width: 100%;
+}
+
+.event_main_page .game_heading {
+    margin-top: 15%;
+}
+
+.fa-li {
+    left: 0 !important;
+}
+
+/* Date / prize / teams icon */
+
+#aa {
+    color: cornsilk;
+}
+
+#aa i {
+    font-size: 30px;
+}
+
+/* Table */
+
+/* Prize Pool */
+
+.icon {
+    position: absolute;
+    top: -7%;
+    left: 50%;
+    height: 70px;
+    width: 70px;
+    text-align: center;
+    line-height: 80px;
+    background: #dc3545;
+    clip-path: circle(50%);
+    transform: translateX(-50%);
+}
+
+.icon i {
+    font-size: 32px;
+}
+
+caption {
+    caption-side: unset;
+    color: cornsilk;
+    font-size: 25px;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 767px) {
+    body {
+        padding: unset !important;
+    }
+    .rule-row a {
+        padding-left: unset;
+        padding-right: 100px;
+        /* padding-right: unset; */
+        margin-left: 0px !important;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 992px) {
+    .event_main_page .game_heading {
+        margin-top: 25%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .event_main_page .game_heading {
+        margin-top: 35%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    caption {
+        caption-side: unset;
+        color: cornsilk;
+        font-size: 25px;
+        text-align: center;
+    }
+}
