@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="Jquery/jquery-3.4.1.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="Font/fontawesome-free-5.12.0-web/css/all.css"></script>
+    <link rel="stylesheet" type="text/css" href="gameteam.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12 m-0 p-0">
+
+                <!-- Main Jumbotron -->
+                <div class="user_info position-relative">
+                    <!-- Jumbotron Heading -->
+                    <h1 class="position-absolute">
+                        <font>bhagatkaran <br> CURRENT BALANCE: 0 IGL COINS</font>
+                    </h1>
+                </div>
+                <img src="images/cod1.jpg" class="round" alt="">
+                <!-- <img src="icon-camera.png" class="img-responsive">  -->
+                <input type="file" id="proimg">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <h2>CREATE YOUR TEAM</h2>
+                            <p id='aa'>Create a Team, add your team members to compete with other teams in the
+                                tournaments</p>
+                        </div>
+
+                        <div class="col-sm-6">
+                            <h2>TEAM NAME</h2>
+                            <p id='aa'>Let us know who you are.</p>
+                            <input type="text" id="txt" placeholder=" " class="form-control">
+                        </div>
+                        <div class="col-sm-6">
+                            <h2>YOUR ROLE</h2>
+                            <p id='aa'>Your team will be known as this. May be changed later.</p>
+                            <input type="text" id="txt" placeholder="Captain" class="form-control" disabled>
+                        </div>
+                        <div class="col-sm-6">
+                            <h2>GAMING PLATFORM</h2>
+                            <p id='aa'>Choose a gaming platform your team is on.</p>
+                            <input type="text" id="txt" placeholder="Select Platform" class="form-control"
+                                list="plat" />
+                            <datalist id="plat">
+                                <option>Select Platform</option>
+                                <option>PC</option>
+                                <option>PLAYSTATION4</option>
+                                <option>MOBILE</option>
+                                <option>NINTENDO SWITCH</option>
+                                <option>CROSS-PLATFORM</option>
+                            </datalist>
+                        </div>
+                        <div class="col-sm-6">
+                            <h2>GAMES</h2>
+                            <p id='aa'>Choose a game your team is on</p>
+                            <input type="text" placeholder="Select Game" id="txt" class="form-control" list="game" />
+                            <datalist id="game">
+                                <option>PUBG MOBILE</option>
+                                <option>GOD OF WAR</option>
+                                <option>FREE FIRE</option>
+                                <option>FORNITE</option>
+                            </datalist>
+                        </div>
+                        <div class="col-sm-6">
+                            <h2>GAME ID</h2>
+                            <p id='aa'>Please enter your Game ID</p>
+                            <input type="text" id="txt" placeholder=" " class="form-control">
+                        </div>
+                        <div class="col-sm-6">
+                            <h2>TEAM SIZE</h2>
+                            <p id='aa'>Please select Team Size</p>
+                            <input type="text" id="txt" placeholder="Select Team Size" class="form-control">
+                        </div>
+                        <div class="col-sm-6">
+                            <h2>TEAM WEBSITE</h2>
+                            <p id='aa'>Please enter your Team Website. If any,</p>
+                            <input type="text" id="txt" placeholder=" " class="form-control">
+                        </div>
+                        <div class="col-sm-6">
+                            <h2>TEAM IMAGE</h2>
+                            <p id='aa'>Please select Team Image</p>
+                            <input type="file" id="txt" placeholder=" " class="form-control">
+                        </div>
+                        <div class="col-sm-6">
+                            <h2>TEAM MEMBERS</h2>
+                            <p id='aa'>Please enter your Team Member information.</p>
+                        </div>
+                        <div class="col-md-12">
+                            <input type="submit" value="CREATE TEAM" id="buton">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

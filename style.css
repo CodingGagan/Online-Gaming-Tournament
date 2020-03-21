@@ -15,15 +15,6 @@ html, body {
     margin: 0 !important;
 }
 
-:root {
-    /* 3.5rem -> 56px -> 5.6vw */
-    --size56: 5.6vw;
-    --size40: 4vw;
-    --size36: 3.6vw;
-    --size20: 2vw;
-    --size16: 1.6vw;
-}
-
 /* ************************************* HomePage Carousel ****************************************** */
 
 /* Carousel Inner */

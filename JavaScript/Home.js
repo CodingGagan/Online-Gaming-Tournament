@@ -49,8 +49,10 @@ window.onscroll = function () {
             document.getElementById('xs-navbar-brand').style.visibility = 'visible';
         }
     } else if (xOffset >= 992 && yOffset > 5) {
+        document.getElementById('header_outer_area').style.marginTop = '40px';
         topNavbar.style.display = 'none';
     } else {
+        // document.getElementById('header_outer_area').style.marginTop = '80px !important';
         topNavbar.style.display = 'block';
     }
 }

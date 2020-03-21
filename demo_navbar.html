@@ -4,150 +4,187 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="css/bootstrap.css">
-    <script src="jquery/jquery-3.4.1.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
     <script src="js/bootstrap.js"></script>
+    <link rel="stylesheet" href="demo_navbar.css">
     <style>
-        .nav-pills li {
-            margin: auto;
+        .container {
+            position: absolute;
+            top: 5%;
+            left: 20%;
+            width: 1000px;
+            padding: 30px;
+            color: black;
+            background: silver;
+            border-radius: 20px;
+
+
+
+        }
+
+        .div {
+            position: relative;
+            width: 200px;
+            height: 200px;
+            /* background-image: url(men7.jpg); */
+            /* border-radius: 50%; */
+            float: left;
+            shape-outside: circle();
+            margin: 20px;
         }
     </style>
+
 </head>
 
-<body>
-    <!-- Demo -->
+<body id="body">
+    <!-- Jumbotron -->
+    <div class="jumbotron p-0 m-0">
 
-    <section class="container third-section mt-5">
-        <div class="row">
-            <div class="col-md-12">
-                <ul class="nav nav-pills">
-                    <li class="nav-item"><a data-toggle="tab" class="nav-link active" href="#first">Plan Your
-                            Courses</a>
-                    </li>
-                    <li class="nav-item"><a data-toggle="tab" class="nav-link" href="#second">Record Your
-                            Video</a></li>
-                    <li class="nav-item"><a data-toggle="tab" class="nav-link" href="#third">Build your community</a>
-                    </li>
-                </ul>
+        <!-- Navbar -->
+        <div class="header_img_area position-fixed w-100" style="z-index: 10000;">
+            <!-- upper navbar icon -->
 
-                <div class="tab-content mt-5">
-                    <!-- First Tab -->
-                    <div id="first" class="tab-pane active">
-
-
-                        <div class="row">
-                            <div class="col-md-6 p-3">
-                                <div class="left-content">
-                                    <h5>Plan Your Courses</h5>
-                                    <p>Get organised</p>
-                                    <p>
-                                        You start with your passion and knowledge. Then choose a topic and plan your
-                                        lectures in Google Docs, Microsoft Excel, or your favorite notebook.
-                                    </p>
-                                    <p>
-                                        You get to teach the way you want — even create courses in multiple languages
-                                        and inspire more students.
-                                    </p>
-                                    <p>How we help you</p>
-                                    <p>
-                                        Udemy offers free courses on how to build your own course, complete with
-                                        worksheets and real-world examples. Plus, our instructor dashboard and
-                                        curriculum pages help keep you on track.
-                                    </p>
-                                </div>
-                            </div>
-                            <!-- Second Row of Row -->
-                            <div class="col-md-6">
-                                <div class="right-content img">
-                                    <img src="https://www.udemy.com/staticx/udemy/images/teaching/v6/Sign_up_illustration_v2.svg"
-                                        class="d-block mx-auto mt-5" alt="">
-                                </div>
-                            </div>
-                        </div>
+            <div class="primary-navbar" id="primary-navbar">
+                <div class="header-icon">
+                    <!-- Social Icon -->
+                    <div class="header_social d-inline-block">
+                        <a href="#">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-instagram"></i>
+                        </a>
                     </div>
 
-                    <!-- Second Tabs -->
-                    <div id="second" class="tab-pane fade">
+                    <!-- Login and register place -->
+                    <div class="access navbar p-0 pr-5 navbar-expand d-inline-block">
+                        <ul class="navbar-nav">
+                            <!-- Login -->
+                            <li class="nav-item">
+                                <a href="" data-toggle="modal" data-target="#login_modal" class="nav-link">
+                                    <span class="login_icon p-0 pr-3">
+                                        <img src="slider_img/login-icon.png" alt="">
+                                    </span>
+                                    <span class="login_button">
+                                        Login
+                                    </span>
+                                </a>
+                            </li>
 
-                        <div class="row">
-                            <div class="col-md-6 p-3">
-                                <div class="left-content">
-                                    <h5>Record Your Video</h5>
-                                    <p>Lights, camera, action</p>
-                                    <p>
-                                        Got a smartphone or a DSLR? Add a microphone and you’re ready to film your first
-                                        course from your home or wherever you happen to be.
-                                    </p>
-                                    <p>
-                                        Camera shy? No Worries. Use screencasting software, like Camtasia, to screencast
-                                        demos.
-                                    </p>
-                                    <p>How we help you</p>
-                                    <p>
-                                        Our support team is available to help and offers free review of your videos. And
-                                        our online instructor community is here to offer advice and inspiration.
-                                    </p>
-                                </div>
-                            </div>
-                            <!-- Second Row of Row -->
-                            <div class="col-md-6">
-                                <div class="right-content img">
-                                    <img src="https://www.udemy.com/staticx/udemy/images/teaching/v6/Create_course_illustration_v3.svg"
-                                        class="d-block mx-auto mt-5" alt="">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Third Tabs -->
-                    <div id="third" class="tab-pane fade">
-
-                        <div class="row">
-                            <div class="col-md-6 p-3">
-                                <div class="left-content">
-                                    <h5>Build your community</h5>
-                                    <p>Reach out</p>
-                                    <p>
-                                        Create quizzes, exercises, and assignments to build interactivity. Write welcome
-                                        messages for your students and answer their questions. Because Udemy students
-                                        don’t just watch, they do.
-                                    </p>
-                                    <p>How we help you</p>
-                                    <p>
-                                        We provide all the tools for messaging, Q&As, course announcements, and quizzes,
-                                        all in one one place.
-                                    </p>
-
-                                </div>
-                            </div>
-                            <!-- Second Row of Row -->
-                            <div class="col-md-6">
-                                <div class="right-content img">
-                                    <img src="https://www.udemy.com/staticx/udemy/images/teaching/v6/Start_sharing_illustration_v2.svg"
-                                        class="d-block mx-auto mt-5" alt="">
-                                </div>
-                            </div>
-                        </div>
+                            <!-- Register -->
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">
+                                    <span class="reg_icon p-0 pr-3">
+                                        <img src="slider_img/reg-icon.png" alt="">
+                                    </span>
+                                    <span class="reg_button">
+                                        Register
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
+
+            <!-- Upper Navbar Icon's -->
+            <!-- This div use for left and right image -->
+            <div class="bg-pos"></div>
+            <div class="header_outer_area" id="header_outer_area">
+                <a id="xs-navbar-brand" href="#"
+                    class="navbar-brand nav-brand-xs w-100 d-block position-fixed d-lg-none">
+                    <img src="https://www.iglnetwork.com/assets/images/logo.png" class="d-block mx-auto"
+                        alt="Brand Image">
+                </a>
+                <header id="navbar-header" class="main-navbar navbar navbar-expand-lg ">
+                    <button id="navbar-toggle" class="navbar-toggler navbar-light" data-target='#navbar-hide'
+                        data-toggle="collapse">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" style="top: 54px;" id="navbar-hide">
+                        <!-- <button type="button" class="close" data-dismiss="modal">&times;</button> -->
+                        <ul class="navbar-nav first w-100 m-0">
+                            <div class="left-navbar mx-auto navbar-nav">
+                                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                                <li class="nav-item"><a href="game_page.html" class="nav-link">Games</a></li>
+                                <li class="nav-item"><a href="tournament.html" class="nav-link">Events</a></li>
+                            </div>
+
+                            <div class="right-navbar mx-auto navbar-nav">
+                                <li class="nav-item"><a href="#" class="nav-link">Demo</a></li>
+                                <li class="nav-item"><a href="aboutUsPage.php" class="nav-link">About Us</a></li>
+                                <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+
+                                <li class="nav-item"><a href="#" class="nav-link d-lg-none">Login</a></li>
+                                <li class="nav-item"><a href="#" class="nav-link d-lg-none">Register</a></li>
+                            </div>
+                        </ul>
+                    </div>
+                </header>
+            </div>
         </div>
-    </section>
+    </div>
 
 
-    <!-- JS -->
+
+
+    <!-- Faltu -->
+    <div style="height: 1000px"></div>
+    <div style="height: 1000px"></div>
+    <div style="height: 1000px"></div>
+    <!-- Faltu -->
+
     <script>
-        // $(document).on('mouseenter', '[data-toggle="tab"]', function () {
-        //     $(this).tab('show');
-        // });
 
         $(function () {
-            $('.nav-pills li a').mouseenter(function () {
-                $(this).tab('show');
-            });
+            window.onscroll = function () {
+                var scroll = window.pageYOffset;
+                console.log(window.pageYOffset);
+                if (scroll >= 300) { console.log("300"); }
+                else if (scroll >= 400) { console.log("400"); }
+                else {console.log("less than 300");}
+                // if (scroll > 300) {
+                //     $("#header_outer_area").css({ 'width': '100%', 'transition': 'all 1s linear' });
+                //     $(".bg-pos").css({ 'display': 'none' });
+                // } else if (scroll > 350) {
+                //     console.log('400 enter');
+                //     $('#body').css({'background':'red'});
+                //     $("#header_outer_area").css({
+                //         'width': 'unset',
+                //         'transition': 'all 1s linear',
+                //         'position': 'absolute',
+                //         'right':'0'
+                //     });
+                // } else {
+                //     $("#header_outer_area").css({ 'width': '90%', 'transition': 'all 1s linear' });
+                //     $(".bg-pos").css({ 'display': 'block' });
+                // }
+            }
         });
+
+        // window.onscroll = function () {
+        //     var scroll = window.pageYOffset;
+
+        //     if (scroll > 10) {
+        //         console.log(scroll);
+        //         document.getElementById('body').style.background = 'red';
+        //         document.getElementById('header_outer_area').style.width = "50px";
+        //         document.getElementById('header_outer_area').style.transition = "all 1s linear";
+        //     } else {
+        //         document.getElementById('header_outer_area').style.width = "100% ";
+        //         document.getElementById('header_outer_area').style.transition = "all 1s linear";
+        //     }
+        // }
     </script>
 </body>
 

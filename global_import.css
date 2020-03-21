@@ -1,0 +1,9 @@
+@import "https://fonts.googleapis.com/css?family=Audiowide&display=swap";
+
+:root {
+    --colorred: orangered;
+    --colorwhite: #fff;
+    --colorblack: #000;
+
+    --black_fade: rgba(0,0,0,.7);
+}

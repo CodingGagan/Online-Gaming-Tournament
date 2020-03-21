@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Profile</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="Jquery/jquery-3.4.1.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <link rel="stylesheet" href="Font/fontawesome-free-5.12.0-web/css/all.css">
+    <link rel="stylesheet" href="Edit_User.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="foot.css">
+
+    <!-- Font -->
+    <!-- <link href="https://fonts.googleapis.com/css?family=Audiowide&display=swap" rel="stylesheet"> -->
+</head>
+
+<body>
+
+
+    <!-- Gap -->
+    <div class="gap_top_main" style="height: 20vh;"></div>
+    <!-- Tabs Container -->
+    <div class="container-fluid second-section">
+        <div class="row">
+
+            <!-- Container / Page main heading -->
+            <div class="col-12 text-center">
+                <h1 class="page_heading">EDIT <span class="heading_2">PROFILE</span></h1>
+                <p>Change your profile settings and gaming preferences</p>
+            </div>
+
+            <!-- Tabs -->
+            <div class="col-12">
+                <!-- <ul class="nav" id="pills-tab">
+                    <li class="nav-item" id="tab-1">
+                        <a class="nav-link active" data-toggle="tab" href="#user_profile">
+                            Edit Profile
+                        </a>
+                    </li>
+                    <li class="nav-item" id="tab-2">
+                        <a class="nav-link" data-toggle="tab" href="#password">
+                            Change Password
+                        </a>
+                    </li>
+                    <li class="nav-item" id="tab-3">
+                        <a class="nav-link" data-toggle="tab" href="#game_prefer">
+                            Game preferences
+                        </a>
+                    </li>
+                    <li class="nav-item" id="tab-4">
+                        <a class="nav-link" data-toggle="tab" href="#game_id">
+                            Game ID / Network ID
+                        </a>
+                    </li>
+                </ul>
+
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 25%;">
+
+                    </div>
+                </div> -->
+                <main>
+                    <div id="tabs" class="">
+                        <ul class="nav nav-pills">
+                            <li class="nav-item">
+                                <a class="nav-link active" data-toggle="tab" href="#user_profile">
+                                    Home
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="tab" href="#password">
+                                    Section 2
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="tab" href="#game_prefer">
+                                    Section 3
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="tab" href="#game_id">
+                                    Section 4
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div id="content">
+
+                    </div>
+                </main>
+            </div>
+
+            <!-- Tabs Content -->
+            <div class="col-11 mx-auto mt-4">
+                <div class="tab-content d-block" id="pills-tabContent">
+                    <div class="tab-pane fade show active" id="user_profile">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <label for="username">Username: </label>
+                                    <input type="text" class="form-control">
+                                </div>
+
+                                <div class="col-md-6">
+                                    <label for="fullname">Fullname: </label>
+                                    <input type="text" class="form-control">
+                                </div>
+
+                                <div class="col-md-6">
+                                    <label for="email">Email: </label>
+                                    <input type="text" class="form-control">
+                                </div>
+
+                                <div class="col-md-6">
+                                    <label for="mobile">Mobile:</label>
+                                    <input type="number" class="form-control">
+                                </div>
+
+                                <div class="col-md-6">
+                                    <label for="social">Social username:</label>
+                                    <input type="text" class="form-control">
+                                </div>
+
+                                <div class="col-md-6">
+                                    <label for="dob">Date of Birth:</label>
+                                    <input type="date" class="form-control">
+                                </div>
+
+                                <div class="col-md-6">
+                                    <label for="gender" class="d-block">Gender:</label>
+                                    <input type="radio" value="Male" name="gender" class="">
+                                    <label for="gender">Male</label>
+                                    <input type="radio" value="Female" name="gender" class="">
+                                    <label for="gender">Female</label>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <label for="country">Country:</label>
+                                    <select name="country" class="form-control" disabled>
+                                        <option value="">India</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-4">
+                                    <label for="state">State:</label>
+                                    <select name="state" class="form-control">
+                                        <option value=""></option>
+                                        <option value="">India</option>
+                                        <option value="">Indiana jones</option>
+                                        <option value="">Demo</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-4">
+                                    <label for="city">City:</label>
+                                    <select name="city" class="form-control">
+                                        <option value=""></option>
+                                        <option value="">India</option>
+                                        <option value="">Indiana jones</option>
+                                        <option value="">Demo</option>
+                                    </select>
+                                </div>
+
+                                <div class="col-12">
+                                    <label for="about">About me:</label>
+                                    <textarea name="" id="" class="form-control"></textarea>
+                                </div>
+
+                                <div class="col-6 mx-auto">
+                                    <label for="currentpassword" class="text-center d-block mt-3">Enter Current
+                                        Password:</label>
+                                    <input type="text" class="form-control">
+                                </div>
+
+                            </div>
+
+                            <!-- Update Button -->
+                            <button class="btn d-block mx-auto mt-4">Update</button>
+
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="password">
+                        <form action="" method="POST">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <label for="current_pass_2">Current password: </label>
+                                        <input type="text" class="form-control">
+                                    </div>
+
+                                    <div class="col-12">
+                                        <label for="new_password">New password:</label>
+                                        <input type="text" class="form-control">
+                                    </div>
+
+                                    <div class="col-12">
+                                        <label for="confirm_password">Confirm password:</label>
+                                        <input type="text" class="form-control">
+                                    </div>
+
+                                    <!-- Update Button -->
+                                    <button class="btn d-block mx-auto mt-4">Update</button>
+
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="tab-pane fade" id="game_prefer">
+                        <div class="container">
+                            <div class="row p-3 border border-info">
+                                <div class="col-md-3">
+                                    <div class="">
+                                        <a href="#">
+                                            <div class="game_prefer_images">
+                                                <div class="info">
+                                                    <h3>PUBG MOBILE</h3>
+                                                    <p>Tournament: 4</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="">
+                                        <a href="#">
+                                            <div class="game_prefer_images">
+                                                <div class="info">
+                                                    <h3>PUBG MOBILE</h3>
+                                                    <p>Tournament: 4</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="">
+                                        <a href="#">
+                                            <div class="game_prefer_images">
+                                                <div class="info">
+                                                    <h3>PUBG MOBILE</h3>
+                                                    <p>Tournament: 4</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="">
+                                        <a href="#">
+                                            <div class="game_prefer_images">
+                                                <div class="info">
+                                                    <h3>PUBG MOBILE</h3>
+                                                    <p>Tournament: 4</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <!-- Button for add game -->
+                                <div class="col-12 mt-4 text-center">
+                                    <a href="#" class="btn border-info">Add New Game</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="game_id">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <label for="pubg">PUBG ID: </label>
+                                    <input type="text" class="form-control">
+                                </div>
+
+                                <div class="col-md-6">
+                                    <label for="cod">COD ID: </label>
+                                    <input type="text" class="form-control">
+                                </div>
+
+                                <div class="col-md-6">
+                                    <label for="freefire">Free Fire ID: </label>
+                                    <input type="text" class="form-control">
+                                </div>
+
+                                <div class="col-md-6">
+                                    <label for="fortnite">Fortnite: </label>
+                                    <input type="text" class="form-control">
+                                </div>
+
+                                <!-- Update Button -->
+                                <button class="btn d-block mx-auto mt-4">Submit</button>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+
+    <!-- Script -->
+    <script>
+       
+    </script>
+</body>
+
+</html>

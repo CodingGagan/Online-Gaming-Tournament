@@ -1,0 +1,243 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html, body {
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+/* Col-12 */
+
+.col-12 {
+    padding-left: unset !important;
+    padding-right: unset !important;
+}
+
+.rat {
+    height: 50vh;
+    background-image: linear-gradient(to right, rgba(16, 21, 63, 0.8), rgba(195, 55, 100, .8)), url(https://iglnetwork.com/assets/images/profile-banner-01.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+    background-position: center;
+}
+
+.fat {
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    background-image: url(https://iglnetwork.com/assets/images/cr1.jpg);
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* clip-path: circle(50%);*/
+    border-radius: 50%;
+    border: solid 5px red;
+}
+
+/* Second-section / User's Stats */
+
+.user_stats {
+    background: url(images/pubg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: top;
+    background-color: rgba(0, 0, 0, .5);
+    background-blend-mode: color;
+    padding-bottom: 80px;
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
+.user_stats-heading {
+    position: relative;
+    overflow: hidden;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.user_stats-heading::before, .user_stats-heading::after {
+    content: "";
+    position: absolute;
+    width: 30%;
+    height: 2px;
+    top: 50%;
+    background: black;
+}
+
+.user_stats-heading::before {
+    left: 5%;
+}
+
+.user_stats-heading::after {
+    right: 5%;
+}
+
+.sat .pro_name {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.sat .col-md-3:nth-child(1) {
+    padding-left: unset;
+}
+
+.sat .col-md-3:nth-child(4) {
+    padding-right: unset;
+}
+
+.sat .col-md-3 .bg-dark {
+    padding: 5px;
+    text-align: center;
+}
+
+/* 3rd section / Recent play */
+
+.recent_play_section {
+    background: url(images/abtusimg4.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: top;
+    background-color: rgba(161, 26, 26, 0.5);
+    background-blend-mode: color;
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
+/* My Tournament */
+
+.my_tournament {
+    background: url(images/pubg2.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: top;
+    background-color: rgba(0, 0, 0, .5);
+    background-blend-mode: color;
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
+.tournament_content .card {
+    width: 80%;
+    min-height: 200px;
+    border: 1px solid white;
+    box-shadow: 0px 0px 10px black;
+}
+
+/* My team */
+
+.my_team {
+    background: url(slider_img/fn3.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: top;
+    background-color: rgba(0, 0, 0, .5);
+    background-blend-mode: color;
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
+/* Game ID */
+
+.game_id {
+    background: url(slider_img/freefire.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: top;
+    background-color: rgba(0, 0, 0, .5);
+    background-blend-mode: color;
+    padding-top: 10%;
+    padding-bottom: 2%;
+}
+
+.game_id .bg-dark {
+    padding: 40px 10px;
+}
+
+.game_id_content .game_id--div {
+    width: 90%;
+    padding: 10px;
+    text-align: center;
+    letter-spacing: 3px;
+    background: linear-gradient(-35deg, transparent 60%, white 40%);
+    margin-bottom: 4%;
+    transform: skewX(-45deg);
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+.game_id_content .h4 {
+    transform: skewX(45deg);
+}
+
+/* Camera Icon */
+
+.camera {
+    font-size: 50px;
+    color: aqua;
+    margin-top: 80%;
+    margin-left: 80%;
+}
+
+.camera1 {
+    position: absolute;
+    font-size: 50px;
+    color: aqua;
+    top: 25%;
+    /* margin-top: 25%; */
+}
+
+.earn {
+    color: red;
+}
+
+/* Game Bottom Logo */
+
+.game_work_logo img {
+    height: 20%;
+    width: 20%;
+}
+
+/* media queries */
+
+@media (max-width: 767px) {
+    /* col-12 */
+    .col-12 {
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+    }
+    /* main_jumbotron */
+    .rat {
+        height: 80vh;
+    }
+    /* Camera Icon */
+    .rat i, .fat i {
+        font-size: 20px;
+    }
+    /* User Profile */
+    .fat {
+        height: 150px;
+        width: 150px;
+        top: 100%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-position: center 15%;
+    }
+    /* User's Stats */
+    .user_stats {
+        margin-top: 100px;
+    }
+    .sat .col-md-3:not(:last-child) {
+        margin-bottom: 10px;
+    }
+    .sat .col-md-3:nth-child(1) {
+        padding-left: 15px;
+    }
+    .sat .col-md-3:nth-child(4) {
+        padding-right: 15px;
+    }
+}

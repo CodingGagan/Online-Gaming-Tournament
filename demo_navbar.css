@@ -15,60 +15,6 @@ header a {
     color: white;
 }
 
-
-
-/* Button's Start */
-
-/* btn Hover and after */
-
-.btn_red, .btn_red:link, .btn_red:visited {
-    position: relative;
-    display: inline-block;
-    text-decoration: none;
-    padding: 0px 20px 8px 20px;
-    background: #fe0000;
-    border-radius: 100px;
-    font-size: 32px;
-    border: none;
-    cursor: pointer;
-    color: white;
-}
-
-.btn_red:hover {
-    transform: translateY(-2px);
-    box-shadow: 0px 8px 20px #000;
-}
-
-.btn_red:active, .btn_red:focus {
-    outline: none;
-    transform: translateY(1px);
-    box-shadow: 0px 8px 10px #000;
-}
-
-.btn_red::after {
-    content: "";
-    display: inline-block;
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    border-radius: 100px;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    background: #fe0000;
-    transition: all 0.5s;
-}
-
-.btn_red:hover::after {
-    transform: scaleX(1.4) scaleY(1.6);
-    opacity: 0;
-}
-
-.btn_red img {
-    vertical-align: sub !important;
-}
-
-
 /* Upper menu Start */
 
 .primary-navbar {
@@ -231,3 +177,6 @@ header a {
         right: 0%;
     }
 }
+
+
+
