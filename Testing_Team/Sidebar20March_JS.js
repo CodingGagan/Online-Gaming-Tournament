@@ -5,6 +5,7 @@ const nav_icon = selectElement('i');
 selectElement('.hamburger').addEventListener('click', () => {
     header.classList.toggle('active');
     mainContent.classList.toggle('active');
+    // Code start
     if (mainContent.classList.contains('active')) {
         nav_icon.classList.remove('fa-bars');
         nav_icon.classList.add('fa-times');
@@ -12,6 +13,7 @@ selectElement('.hamburger').addEventListener('click', () => {
         nav_icon.classList.remove('fa-times');
         nav_icon.classList.add('fa-bars');
     }
+    // Code end 
 });
 
 window.onclick = (event) => {

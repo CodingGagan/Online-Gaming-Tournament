@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create New Event</title>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <script src="../Jquery/jquery-3.4.1.js"></script>
+    <script src="../js/bootstrap.js"></script>
+    <link rel="stylesheet" href="Organizer_CreateNewEventCSS.css">
+    <script src="https://kit.fontawesome.com/9db8958af1.js"></script>
+    
+</head>
+<body>
+    <div class="container-fluid">
+        <!-- Tabs(Basics, Info , Settings) -->
+        <div class="row">
+            <div class="col-md-12 col-sm-3 col-3 px-0">
+                <div class="tabs bg-dark">
+                    <ul class="nav nav-tabs  text-center" role="tablist">
+                        <li class="nav-item">
+                            <a data-toggle="tab" href="#tab1" role="tab">
+                                <h6>Basics</h6>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a data-toggle="tab" href="#tab2" role="tab">
+                                <h6>Info</h6>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a data-toggle="tab" href="#tab3" role="tab">
+                                <h6>Settings</h6>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- -------------------------------------------------------------------------------------------------------------- -->
+        <!-- End of Tab's coding -->
+        <!-- Tab's Content -->
+        <div class="row mt-5">
+            <div class="col-12 px-0">
+                <div class="tab-content bg-dark text-white p-4">
+                    <!-- Tab-First's Content i.e. BASICS  -->
+                    <div id="tab1" class="tab-pane fade show active" role="tabpanel">
+                        <!-- i.e. Required input fields like name, type and time/date of game event -->
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="required-fields">
+                                    <h4>Required Fields</h4>
+                                    <hr>
+                                    <form action="" method="POST">
+                                        <div class="row">
+                                            <div class="col-md-10">
+                                                <div class="div">
+                                                    <input class="form-control" type="text" name="" required>
+                                                    <i class="fas fa-gamepad"></i><label for="">&nbsp;&nbsp;Selected Game</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-10">
+                                                <div class="div">
+                                                    <input class="form-control" type="text" name="" required>
+                                                    <i class="fas fa-font"></i><label for="">&nbsp;&nbsp;Tournament/Event Name</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-10">
+                                                <div class="div">
+                                                    <!-- <input class="form-control" type="text" name="" required> -->
+                                                    <select class="form-control bg-transparent" name="GamePlatform" id="GamePlatform">
+                                                        <option class="bg-dark text-white" value="#"></option>
+                                                        <option class="bg-dark text-white" value="#">PC</option>
+                                                        <option class="bg-dark text-white" value="#">Mobile</option>
+                                                        <option class="bg-dark text-white" value="#">Another</option>
+                                                    </select>
+                                                    <i class="fas fa-laptop"></i><label for="">&nbsp;&nbsp;Game Platform</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-5">
+                                                <div class="div">
+                                                    <input class="form-control" type="text" name="" required>
+                                                    <i class="fas fa-money-check-alt"></i><label for="">&nbsp;&nbsp;Price</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-5">
+                                                <div class="div">
+                                                    <input class="form-control" type="text" name="" required>
+                                                    <i class="fas fa-trophy"></i><label for="">&nbsp;&nbsp;Prize</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-10">
+                                                <div class="div">
+                                                    <select class="form-control bg-transparent" name="GameType" id="GameType">
+                                                        <option class="bg-dark text-white" value=""></option>
+                                                        <option class="bg-dark text-white" value="#">Solo</option>
+                                                        <option class="bg-dark text-white" value="#">Duo</option>
+                                                        <option class="bg-dark text-white" value="#">Squad</option>
+                                                    </select>
+                                                    <i class="fas fa-users"></i><label for="">&nbsp;&nbsp;Game Type</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-10">
+                                                <div class="div">
+                                                    <input class="form-control" placeholder="" type="" name="" required>
+                                                    <i class="fas fa-calendar-alt"></i><label for="">&nbsp;&nbsp;Start Date & Time</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+
+                            </div>
+                            <div class="col-md-12 mt-3">
+                                <!-- optional fields like logo or banner of game event -->
+                                <div class="optional-fields">
+                                    <h4>Optional Fields</h4>
+                                    <hr>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Eof Tab-first's content -->
+                    <!-- Tab-second's Content i.e. INFO  -->
+                    <div id="tab2" class="tab-pane fade" role="tabpanel">
+                        <h4>Required Fields2</h4>
+                    </div>
+                    <!-- Eof Tab-SEcond's content(INFO) -->
+                    <!-- Eof Tab-third's content i.e. SETTINGS -->
+                    <div id="tab3" class="tab-pane fade" role="tabpanel">
+                        <h4>Required Fields3</h4>
+                    </div>
+                    <!-- Eof Tab-third's content(settings) -->
+
+                </div>
+            </div>
+        </div>
+        <!-- Eof Tab's content -->
+    </div>
+</body>
+<script>
+    function statecheck($formControl){
+        if($formControl.val().length>0)
+        {
+            $formControl.addClass('valid');
+        }else{
+            $formControl.removeClass('valid');
+        }
+    }
+    $(function(){
+        $('.form-control').on('focusout',function(){
+            statecheck($(this));
+        });
+    });
+</script>
+</html>

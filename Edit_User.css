@@ -54,7 +54,7 @@ a:hover {
 /* Demo */
 
 main {
-    max-width: 800px;
+    max-width: 90%;
     margin: 30px auto;
     background: #3F3F3D;
     padding: 30px;
@@ -157,7 +157,7 @@ a {
 .second-section {
     padding-top: 30px;
     padding-bottom: 30px;
-    box-shadow: 0px -5px 5px #8E2DE2, -5px 0px 5px transparent, 0px 5px 5px #cc2b5e, 5px 0px 5px transparent;
+    /* box-shadow: 0px -5px 5px #8E2DE2, -5px 0px 5px transparent, 0px 5px 5px #cc2b5e, 5px 0px 5px transparent; */
 }
 
 /* progress bar */
