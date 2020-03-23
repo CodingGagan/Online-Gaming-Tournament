@@ -1,0 +1,35 @@
+[33mcommit d9b7a7ea1fa2743b48cadfe4bdc7b437782fa488[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m)[m
+Author: learningphp4dev <learningphp4@gmail.com>
+Date:   Sat Mar 21 14:50:27 2020 +0530
+
+    update game-userprofile-login and add global_import file
+
+[33mcommit 4960046d9f51574cebb233ac09c5316b8307aeae[m[33m ([m[1;32mupd_game_footer[m[33m)[m
+Author: gagandeepdev <gagandeep140197@gmail.com>
+Date:   Wed Mar 4 18:24:51 2020 +0530
+
+    updated aboutus, gameplay, tournament pages
+
+[33mcommit c659e83cd7cda783c19a0c0ffb2a87fdf1fb83cd[m
+Author: gagandeepdev <gagandeep140197@gmail.com>
+Date:   Mon Mar 2 11:37:36 2020 +0530
+
+    updated and combine team files
+
+[33mcommit 23da4a16d4691ed94024656cb9b99179b22e3a0a[m[33m ([m[1;31morigin/upd_game_footer[m[33m, [m[1;32mimage_error[m[33m)[m
+Author: gagandeepdev <gagandeep140197@gmail.com>
+Date:   Fri Feb 21 20:16:23 2020 +0530
+
+    update game_page and footer
+
+[33mcommit dff43ab24b60edb93cb2f85c934d230abe1e61a4[m[33m ([m[1;31morigin/updated_whole_project[m[33m, [m[1;31morigin/image_error[m[33m, [m[1;32mupdated_whole_project[m[33m)[m
+Author: gagandeepdev <gagandeep140197@gmail.com>
+Date:   Wed Feb 12 12:50:32 2020 +0530
+
+    add javascript to navbar
+
+[33mcommit e4f3f518cf391e8afb47f4e27ed573f795a29f13[m
+Author: gagandeepdev <gagandeep140197@gmail.com>
+Date:   Sun Feb 9 19:34:14 2020 +0530
+
+    Home Page with navbar, slider, footer
