@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <script src="../Jquery/jquery-3.4.1.js"></script>
+    <script src="../js/bootstrap.js"></script>
+    <link rel="stylesheet" href="../Font/fontawesome-free-5.12.0-web/css/all.css">
+    <link rel="stylesheet" href="admin_css/admin_sidebar.css">
+    <link rel="stylesheet" href="admin_css/style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- Sidebar -->
+        <nav id="sidebar">
+
+            <div class="sidebar-header">
+                <h3>BLOODSHED</h3>
+            </div>
+
+            <ul class="list-unstyled components">
+                <p>BLOODSHED</p>
+                <li class="active">
+                    <a href="#homeSubmenu" data-toggle="collapse" class="dropdown-toggle">Dashboard</a>
+                    <ul class="collapse list-unstyled" id="homeSubmenu">
+                        <li>
+                            <a href="#">Home 1</a>
+                        </li>
+                        <li>
+                            <a href="#">Home 2</a>
+                        </li>
+                        <li>
+                            <a href="#">Home 3</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Website pages</a>
+                </li>
+                <li>
+                    <a href="#pageSubmenu" data-toggle="collapse" class="dropdown-toggle">User Module</a>
+                    <ul class="collapse list-unstyled" id="pageSubmenu">
+                        <li>
+                            <a href="#">Page 1</a>
+                        </li>
+                        <li>
+                            <a href="#">Page 2</a>
+                        </li>
+                        <li>
+                            <a href="#">Page 3</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Admin Module</a>
+                </li>
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+            </ul>
+
+        </nav>
+        <!-- Page Content -->
+        <div id="content">
+            <!-- sidebar button -->
+            <nav class="navbar navbar-expand-lg navbar-light position-fixed w-100" style="z-index: 1111; background: #192231;">
+                <div class="container-fluid">
+
+                    <button type="button" id="sidebarCollapse" class="btn bg-dark text-white">
+                        <i class="fas fa-align-left"></i>
+                        <span></span>
+                    </button>
+                </div>
+            </nav>
+
+            <!-- dashboard heading -->
+            <div class="page_heading">
+                <h2>Dashboard</h2>
+            </div>
+
+            <!-- 4 block of main dashboard -->
+            <div class="container-fluid progress_bar">
+                <div class="row rounded">
+                    <div class="col-12 pt-1 pb-1">
+                        <p>Portfolio Performance</p>
+                    </div>
+
+                    <!-- Ist Block -->
+                    <div class="col-sm-6 col-md-6 col-lg-3">
+                        <div class="user_block d-flex rounded">
+                            <!-- Logo -->
+                            <div class="user_logo bg-warning">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <!-- Stats -->
+                            <div class="user_count text-right p-3">
+                                <p> User</p>
+                                <span>2544</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 2nd block -->
+                    <div class="col-sm-6 col-md-6 col-lg-3">
+                        <div class="user_block d-flex rounded">
+                            <!-- Logo -->
+                            <div class="user_logo bg-warning">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <!-- Stats -->
+                            <div class="user_count text-right p-3">
+                                <p>Organizer</p>
+                                <span>2544</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 3rd block -->
+                    <div class="col-sm-6 col-md-6 col-lg-3">
+                        <div class="user_block d-flex rounded">
+                            <!-- Logo -->
+                            <div class="user_logo bg-warning">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <!-- Stats -->
+                            <div class="user_count text-right p-3">
+                                <p>Events</p>
+                                <span>2544</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 4th block -->
+                    <div class="col-sm-6 col-md-6 col-lg-3">
+                        <div class="user_block d-flex rounded">
+                            <!-- Logo -->
+                            <div class="user_logo">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <!-- Stats -->
+                            <div class="user_count text-right p-3">
+                                <p>Daily Activity</p>
+                                <span>2544</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- website summary -->
+            <div class="container-fluid website_summary mt-5">
+                <table class="table text-white text-center ">
+                    <caption style="caption-side: top; ">Website summary</caption>
+                    <thead>
+                        <th>
+                            Role
+                        </th>
+                        <th>
+                            Total enrolments
+                        </th>
+                        <th>
+                            Active
+                        </th>
+                        <th>
+                            Unactive
+                        </th>
+                        <th>
+                            Action
+                        </th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Administrator</td>
+                            <td>3</td>
+                            <td>3</td>
+                            <td>0</td>
+                            <td>
+                                <a href="# " class="btn bg-danger ">View Full Records</a>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Organizer</td>
+                            <td>17</td>
+                            <td>15</td>
+                            <td>3</td>
+                            <td>
+                                <a href="# " class="btn bg-danger ">View Full Records</a>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>User</td>
+                            <td>766</td>
+                            <td>582</td>
+                            <td>184</td>
+                            <td>
+                                <a href="user/user_data.html " target="_blank " class="btn bg-danger ">View Full Records</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- all stats through chart -->
+        </div>
+    </div>
+
+
+
+    <!-- Javascript -->
+    <script src="admin_js/sidebar.js "></script>
+    <script>
+        // var count = $(('#count'));
+        // $({
+        //     Counter: 0
+        // }).animate({
+        //     Counter: count.text()
+        // }, {
+        //     duration: 5000,
+        //     easing: 'linear',
+        //     step: function() {
+        //         count.text(Math.ceil(this.Counter) + "% ");
+        //     }
+        // });
+
+        // var s = Snap('#animated');
+        // var progress = s.select('#progress');
+
+        // progress.attr({
+        //     strokeDasharray: '0, 251.2'
+        // });
+        // Snap.animate(0, 251.2, function(value) {
+        //     progress.attr({
+        //         'stroke-dasharray': value + ',251.2'
+        //     });
+        // }, 5000);
+    </script>
+</body>
+
+</html>

@@ -1,3 +1,5 @@
+@import "global_import.css";
+
 * {
     padding: 0;
     margin: 0;
@@ -7,6 +9,7 @@ html, body {
     width: 100%;
     margin: 0px;
     padding: 0px;
+    font-family: 'Rokkitt', serif;
     /* overflow-x: hidden; */
 }
 
@@ -84,6 +87,7 @@ html, body {
 }
 
 .carousel-caption h3 {
+    font-family: 'ZCOOL XiaoWei', serif;
     font-size: 56px;
     font-weight: 300;
     line-height: 1.2;
@@ -111,12 +115,9 @@ html, body {
 
 .second-section {
     background: url('images/sec-2-back-img.png');
-    /* background: url('https://www.itl.cat/pngfile/big/7-74280_3840x2160-4k-best-gaming-wallpaper-4k.jpg'); */
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    /* background-color: rgba(0,0,0,0.6);
-    background-blend-mode: color; */
     padding: 40px 0;
     text-align: center;
     overflow: hidden;

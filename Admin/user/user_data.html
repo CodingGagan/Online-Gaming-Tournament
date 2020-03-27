@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../css/bootstrap.css">
+    <script src="../../Jquery/jquery-3.4.1.js"></script>
+    <script src="../../js/bootstrap.js"></script>
+    <link rel="stylesheet" href="../../Font/fontawesome-free-5.12.0-web/css/all.css">
+    <link rel="stylesheet" href="User_data.css">
+    <link rel="stylesheet" href="../admin_css/admin_sidebar.css">
+
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- Sidebar -->
+        <nav id="sidebar">
+
+            <div class="sidebar-header">
+                <h3>BLOODSHED</h3>
+            </div>
+
+            <ul class="list-unstyled components">
+                <p>BLOODSHED</p>
+                <li class="active">
+                    <a href="#homeSubmenu" data-toggle="collapse" class="dropdown-toggle">Dashboard</a>
+                    <ul class="collapse list-unstyled" id="homeSubmenu">
+                        <li>
+                            <a href="#">Home 1</a>
+                        </li>
+                        <li>
+                            <a href="#">Home 2</a>
+                        </li>
+                        <li>
+                            <a href="#">Home 3</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Website pages</a>
+                </li>
+                <li>
+                    <a href="#pageSubmenu" data-toggle="collapse" class="dropdown-toggle">User Module</a>
+                    <ul class="collapse list-unstyled" id="pageSubmenu">
+                        <li>
+                            <a href="#">Page 1</a>
+                        </li>
+                        <li>
+                            <a href="#">Page 2</a>
+                        </li>
+                        <li>
+                            <a href="#">Page 3</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Admin Module</a>
+                </li>
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+            </ul>
+
+        </nav>
+        <!-- Page Content -->
+        <div id="content">
+            <!-- sidebar button -->
+            <div class="top_navbar position-fixed" style="z-index: 1111;">
+                <nav class="navbar navbar-expand-lg navbar-light d-inline-block">
+                    <div class="container-fluid">
+
+                        <button type="button" id="sidebarCollapse" class="btn bg-dark text-white">
+                            <i class="fas fa-align-left"></i>
+                            <span></span>
+                        </button>
+                    </div>
+                </nav>
+
+                <!-- Other Content -->
+
+                <div class="d-inline-block mr-auto profile_icon">
+                    <div class="profile_icon_img">
+                        <img src="../../images/profile.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!-- dashboard heading -->
+            <div class="page_heading text-white">
+                <h2>User Module</h2>
+            </div>
+
+            <!-- Body Content -->
+            <div class="container-fluid user_table_content">
+                <div class="row">
+                    <div class="col-12 p-0">
+                        <div class="search-box mb-5 d-sm-inline-block position-relative">
+                            <input type="text" class="box form-control" placeholder="search here">
+                            <i class="fas fa-search"></i>
+                        </div>
+
+                        <div class="select mt-4 mx-auto d-sm-inline-block">
+                            <select class="form-control">
+                                <option value="">Select status</option>
+                                <option value="Active">Active</option>
+                                <option value="inactive">inactive</option>
+                            </select>
+                            <select class="form-control">
+                                <option value="">Select Game</option>
+                                <option value="fortnite">Fortnite</option>
+                                <option value="Pubg">Pubg</option>
+                                <option value="freefire">Freefire</option>
+                                <option value="call of duty">call of duty</option>
+                            </select>
+                        </div>
+
+                        <!-- <div class="user_table_heading"></div> -->
+
+                        <div class="User_data mt-3">
+                            <div class="table_heading">
+                                <i class="fas fa-table"></i>
+                            </div>
+                            <table class="table text-white">
+                                <caption
+                                    style="caption-side: top; border-top: 1px solid #223a41; border-bottom: 1px solid #223a41; font-size: 22px; font-family: sans-serif;"
+                                    class="text-white pl-3">User's Info</caption>
+                                <thead>
+                                    <tr>
+                                        <th>Index</th>
+                                        <th>Name</th>
+                                        <th>Email</th>
+                                        <th>Status</th>
+                                        <th>Role</th>
+                                        <th>Edit</th>
+                                        <th>Delete</th>
+
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>aman</td>
+                                        <td>aman12@gamil.com</td>
+                                        <td>
+                                            <p class="btn btn-success">Active</p>
+                                        </td>
+                                        <td>User</td>
+                                        <td><button class="btn btn-warning">Edit</button></td>
+                                        <td><button class="btn btn-danger">Delete</button></td>
+
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>aman</td>
+                                        <td>aman12@gamil.com</td>
+                                        <td><button class="btn btn-danger">inactive</button></td>
+                                        <td>User</td>
+                                        <td><button class="btn btn-warning">Edit</button></td>
+                                        <td><button class="btn btn-danger">Delete</button></td>
+
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>aman</td>
+                                        <td>aman12@gamil.com</td>
+                                        <td><button class="btn btn-success">Active</button></td>
+                                        <td>User</td>
+                                        <td><button class="btn btn-danger">Edit</button></td>
+                                        <td><button class="btn btn-danger">Delete</button></td>
+
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>aman</td>
+                                        <td>aman12@gamil.com</td>
+                                        <td><button class="btn btn-danger">inactive</button></td>
+                                        <td>User</td>
+                                        <td><button class="btn btn-danger">Edit</button></td>
+                                        <td><button class="btn btn-danger">Delete</button></td>
+
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>aman</td>
+                                        <td>aman12@gamil.com</td>
+                                        <td><button class="btn btn-success">Active</button></td>
+                                        <td>User</td>
+                                        <td><button class="btn btn-danger">Edit</button></td>
+                                        <td><button class="btn btn-danger">Delete</button></td>
+
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>aman</td>
+                                        <td>aman12@gamil.com</td>
+                                        <td><button class="btn btn-success">Active</button></td>
+                                        <td>User</td>
+                                        <td><button class="btn btn-danger">Edit</button></td>
+                                        <td><button class="btn btn-danger">Delete</button></td>
+
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>aman</td>
+                                        <td>aman12@gamil.com</td>
+                                        <td><button class="btn btn-danger">inactive</button></td>
+                                        <td>User</td>
+                                        <td><button class="btn btn-danger">Edit</button></td>
+                                        <td><button class="btn btn-danger">Delete</button></td>
+
+                                    </tr>
+
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Javascript -->
+    <script src="../admin_js/sidebar.js"></script>
+</body>
+
+</html>

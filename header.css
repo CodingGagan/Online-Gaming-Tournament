@@ -1,4 +1,4 @@
-
+@import "global_import.css";
 
 * {
     padding: 0;
@@ -14,7 +14,6 @@ html {
 header a {
     color: white;
 }
-
 
 
 /* Button's Start */
@@ -87,12 +86,12 @@ header a {
     font-size: 20px;
     margin-left: 10px;
     vertical-align: middle;
-    color: orangered;
+    /* color: orangered; */
 }
 
-.access a {
-    color: orangered !important;
-    font-size: 15px;
+.login_button, .reg_button {
+    font-family:'Jomolhari', serif;
+    font-size: 18px;
 }
 
 /* Upper menu End */

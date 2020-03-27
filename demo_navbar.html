@@ -4,188 +4,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="css/bootstrap.css">
-    <script src="https://code.jquery.com/jquery-3.4.1.js"
-        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script src="Jquery/jquery-3.4.1.js"></script>
     <script src="js/bootstrap.js"></script>
-    <link rel="stylesheet" href="demo_navbar.css">
-    <style>
-        .container {
-            position: absolute;
-            top: 5%;
-            left: 20%;
-            width: 1000px;
-            padding: 30px;
-            color: black;
-            background: silver;
-            border-radius: 20px;
-
-
-
-        }
-
-        .div {
-            position: relative;
-            width: 200px;
-            height: 200px;
-            /* background-image: url(men7.jpg); */
-            /* border-radius: 50%; */
-            float: left;
-            shape-outside: circle();
-            margin: 20px;
-        }
-    </style>
-
+    <link rel="stylesheet" href="Font/fontawesome-free-5.12.0-web/css/all.css">
+    <link rel="stylesheet" href="Testing_Team/org_sidebar.css">
+    <link rel="stylesheet" href="Testing_Team/Organizer_Dashboard.css">
 </head>
 
-<body id="body">
-    <!-- Jumbotron -->
-    <div class="jumbotron p-0 m-0">
-
-        <!-- Navbar -->
-        <div class="header_img_area position-fixed w-100" style="z-index: 10000;">
-            <!-- upper navbar icon -->
-
-            <div class="primary-navbar" id="primary-navbar">
-                <div class="header-icon">
-                    <!-- Social Icon -->
-                    <div class="header_social d-inline-block">
-                        <a href="#">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
-                        <a href="#">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                        <a href="#">
-                            <i class="fab fa-youtube"></i>
-                        </a>
-                        <a href="#">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                    </div>
-
-                    <!-- Login and register place -->
-                    <div class="access navbar p-0 pr-5 navbar-expand d-inline-block">
-                        <ul class="navbar-nav">
-                            <!-- Login -->
-                            <li class="nav-item">
-                                <a href="" data-toggle="modal" data-target="#login_modal" class="nav-link">
-                                    <span class="login_icon p-0 pr-3">
-                                        <img src="slider_img/login-icon.png" alt="">
-                                    </span>
-                                    <span class="login_button">
-                                        Login
-                                    </span>
-                                </a>
-                            </li>
-
-                            <!-- Register -->
-                            <li class="nav-item">
-                                <a href="#" class="nav-link">
-                                    <span class="reg_icon p-0 pr-3">
-                                        <img src="slider_img/reg-icon.png" alt="">
-                                    </span>
-                                    <span class="reg_button">
-                                        Register
-                                    </span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Upper Navbar Icon's -->
-            <!-- This div use for left and right image -->
-            <div class="bg-pos"></div>
-            <div class="header_outer_area" id="header_outer_area">
-                <a id="xs-navbar-brand" href="#"
-                    class="navbar-brand nav-brand-xs w-100 d-block position-fixed d-lg-none">
-                    <img src="https://www.iglnetwork.com/assets/images/logo.png" class="d-block mx-auto"
-                        alt="Brand Image">
-                </a>
-                <header id="navbar-header" class="main-navbar navbar navbar-expand-lg ">
-                    <button id="navbar-toggle" class="navbar-toggler navbar-light" data-target='#navbar-hide'
-                        data-toggle="collapse">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-
-                    <div class="collapse navbar-collapse" style="top: 54px;" id="navbar-hide">
-                        <!-- <button type="button" class="close" data-dismiss="modal">&times;</button> -->
-                        <ul class="navbar-nav first w-100 m-0">
-                            <div class="left-navbar mx-auto navbar-nav">
-                                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
-                                <li class="nav-item"><a href="game_page.html" class="nav-link">Games</a></li>
-                                <li class="nav-item"><a href="tournament.html" class="nav-link">Events</a></li>
-                            </div>
-
-                            <div class="right-navbar mx-auto navbar-nav">
-                                <li class="nav-item"><a href="#" class="nav-link">Demo</a></li>
-                                <li class="nav-item"><a href="aboutUsPage.php" class="nav-link">About Us</a></li>
-                                <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
-
-                                <li class="nav-item"><a href="#" class="nav-link d-lg-none">Login</a></li>
-                                <li class="nav-item"><a href="#" class="nav-link d-lg-none">Register</a></li>
-                            </div>
-                        </ul>
-                    </div>
-                </header>
-            </div>
+<body>
+    <header>
+        <div class="dashb pt-4 pl-5 text-white text-uppercase text-accent-1 text-center">
+            <h1>Dashboard</h1>
         </div>
-    </div>
+        <div class="hamburger">
+            <i class="nav_icon fas fa-bars"></i>
+        </div>
+        <nav class="sidebar">
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a href="" class="nav-link current">
+                        <i title="Dashboard" class="fas fa-tachometer-alt"></i>Dashboard
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="nav-link">
+                        <i title="Create Event" class="fas fa-plus-square"></i>Create Event
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="nav-link">
+                        <i title="Check Event" class="fas fa-check-double"></i>Check Event
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="nav-link">
+                        <i title="Activity" class="fab fa-readme"></i>Activity
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="nav-link">
+                        <i title="Logout" class="fas fa-sign-out-alt"></i>Logout
+                    </a>
+                </li>
+            </ul>
+            <div class="social-media">
+                <a href="" class="icon-link">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="" cladss="icon-link">
+                    <i class="fab fa-twitter-square"></i>
+                </a>
+                <a href="" class="icon-link">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="" class="icon-link">
+                    <i class="fab fa-facebook"></i>
+                </a>
+            </div>
+        </nav>
+    </header>
 
-
-
-
-    <!-- Faltu -->
-    <div style="height: 1000px"></div>
-    <div style="height: 1000px"></div>
-    <div style="height: 1000px"></div>
-    <!-- Faltu -->
-
-    <script>
-
-        $(function () {
-            window.onscroll = function () {
-                var scroll = window.pageYOffset;
-                console.log(window.pageYOffset);
-                if (scroll >= 300) { console.log("300"); }
-                else if (scroll >= 400) { console.log("400"); }
-                else {console.log("less than 300");}
-                // if (scroll > 300) {
-                //     $("#header_outer_area").css({ 'width': '100%', 'transition': 'all 1s linear' });
-                //     $(".bg-pos").css({ 'display': 'none' });
-                // } else if (scroll > 350) {
-                //     console.log('400 enter');
-                //     $('#body').css({'background':'red'});
-                //     $("#header_outer_area").css({
-                //         'width': 'unset',
-                //         'transition': 'all 1s linear',
-                //         'position': 'absolute',
-                //         'right':'0'
-                //     });
-                // } else {
-                //     $("#header_outer_area").css({ 'width': '90%', 'transition': 'all 1s linear' });
-                //     $(".bg-pos").css({ 'display': 'block' });
-                // }
-            }
-        });
-
-        // window.onscroll = function () {
-        //     var scroll = window.pageYOffset;
-
-        //     if (scroll > 10) {
-        //         console.log(scroll);
-        //         document.getElementById('body').style.background = 'red';
-        //         document.getElementById('header_outer_area').style.width = "50px";
-        //         document.getElementById('header_outer_area').style.transition = "all 1s linear";
-        //     } else {
-        //         document.getElementById('header_outer_area').style.width = "100% ";
-        //         document.getElementById('header_outer_area').style.transition = "all 1s linear";
-        //     }
-        // }
-    </script>
+    <script src="Testing_Team/Organizer_Dashboard.js"></script>
 </body>
 
 </html>

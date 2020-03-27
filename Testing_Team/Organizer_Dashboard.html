@@ -9,18 +9,66 @@
     <script src="../Jquery/jquery-3.4.1.js"></script>
     <script src="../js/bootstrap.js"></script>
     <link rel="stylesheet" href="Organizer_Dashboard.css">
-    <script src="chartjs1.js"></script>
-    <script src="chartjs2.js"></script>
-    <!-- <script src="Sidebar20March_JS.js"></script> -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+    <link rel="stylesheet" href="Org_navbar.css">
+    <link rel="stylesheet" href="../Font/fontawesome-free-5.12.0-web/css/all.css">
 </head>
 
 <body>
+    <!-- Main Navbar -->
+    <!-- Navbar -->
+    <div class="main_navbar">
+            <nav class="navbar navbar-expand-lg navbar-mainbg">
+                <a class="navbar-brand navbar-logo" href="#">Bloodshed</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fas fa-bars text-white"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto">
+                        <div class="hori-selector">
+                            <div class="left"></div>
+                            <div class="right"></div>
+                        </div>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="../Index.html"><i class="fas fa-tachometer-alt"></i>Dashboard</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="javascript:void(0);"><i class="far fa-address-book"></i>Games</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="javascript:void(0);"><i class="far fa-clone"></i>Events</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="javascript:void(0);"><i
+                                    class="far fa-calendar-alt"></i>Leaderboard</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="javascript:void(0);"><i class="far fa-chart-bar"></i>About us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="javascript:void(0);"><i class="far fa-copy"></i>Documents</a>
+                        </li>
+                    </ul>
+    
+                    <div class="nav-item profile_navbar w-25 d-flex mr-auto">
+                        <div class="profile">
+                            <img src="../images/profile.jpg" style="height: 100%; width: 100%;" alt="">
+                        </div>
+                        <div class="profile_info text-white pl-2">
+                            <span class="username d-block">GAGANDEEP SINGH</span>
+                            <span class="user_status d-block position-relative">ONLINE</span>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    <!-- Navbar -->
+    <!-- Body Content Start -->
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-12 px-0">
                 <header>
-                    <div class="dashb float-left pt-4 pl-5 text-white">
+                    <div class="dashb pt-4 pl-5 text-white text-uppercase text-accent-1 text-center">
                         <h1>Dashboard</h1>
                     </div>
                     <div class="hamburger">
@@ -58,7 +106,7 @@
                             <a href="" class="icon-link">
                                 <i class="fab fa-instagram"></i>
                             </a>
-                            <a href="" class="icon-link">
+                            <a href="" cladss="icon-link">
                                 <i class="fab fa-twitter-square"></i>
                             </a>
                             <a href="" class="icon-link">
@@ -387,6 +435,7 @@
         </div>
     </div>
     <script src="Organizer_Dashboard.js"></script>
+    <script src="../JavaScript/Organizer_menu.js"></script>
 </body>
 
 </html>

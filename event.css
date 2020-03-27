@@ -3,52 +3,69 @@
     margin: 0;
 }
 
-html, body {
+html,
+body {
     padding: 0;
     margin: 0;
     width: 100%;
-    padding: 0 20px;
 }
+
 
 /* Body section */
 
 body {
-    height: 100vh;
-    background: url(images/pubg2.jpg);
+    position: relative;
+    background: linear-gradient(to bottom, transparent, black 60%), url(images/pubg2.jpg);
     background-size: cover;
     background-position: center top;
     background-attachment: fixed;
 }
 
+
+/* Match Info */
+
+.match_info {
+    height: 50vh;
+}
+
+.match_info .match_info_inner {
+    position: absolute;
+    top: 70%;
+    width: 100%;
+    left: 50%;
+    transform: translate(-50%, -70%);
+}
+
+
 /* first main container */
 
 .event_main_page {
-    margin-top: 60vh;
-    min-height: 80vh;
+    min-height: fit-content;
+    padding-top: 2%;
+    padding-bottom: 10%;
+}
+
+.event_main_page .profile_img {
     position: relative;
 }
 
-.event_main_page .pro_pic_section, .profile_img {
-    position: absolute;
-    width: 200px;
-    height: 200px;
-    top: -10%;
-    left: 50%;
-    transform: translateX(-50%);
+.profile_img {
+    width: 50%;
+    height: 100%;
+    margin: auto;
 }
 
 .profile_img img {
-    height: 100%;
-    width: 100%;
-}
-
-.event_main_page .game_heading {
-    margin-top: 15%;
+    position: absolute;
+    height: 80%;
+    width: 80%;
+    margin-top: 4%;
 }
 
 .fa-li {
     left: 0 !important;
 }
+
 
 /* Date / prize / teams icon */
 
@@ -56,11 +73,24 @@ body {
     color: cornsilk;
 }
 
-#aa i {
-    font-size: 30px;
+#aa>div {
+    margin-top: 3%;
+    margin-bottom: 3%;
 }
 
+#aa i {
+    font-size: 24px;
+}
+
+#aa h5 {
+    font-size: 20px;
+}
+
+
+
+
 /* Table */
+
 
 /* Prize Pool */
 
@@ -87,33 +117,55 @@ caption {
     font-size: 25px;
 }
 
+
 /* Media Queries */
 
 @media screen and (max-width: 767px) {
     body {
         padding: unset !important;
     }
-    .rule-row a {
-        padding-left: unset;
-        padding-right: 100px;
-        /* padding-right: unset; */
-        margin-left: 0px !important;
+
+    h1 {
+        font-size: 30px !important;
+    }
+
+    h4 {
+        font-size: 22px !important;
+    }
+    .match_info .match_info_inner {
         width: 100%;
-        margin-bottom: 20px;
+    }
+    .profile_img {
+        width: 80%;
+    }
+    .profile_img img {
+        display: block !important;
+        margin:auto !important;
+        position: unset !important;
+    }
+    .event_main_page .game_heading {
+        margin-top: 2rem;
+    }
+    .event_main_page .game_heading h1 {
+        font-size: 20px;
+    }
+    /* Table */
+    table th,
+    td {
+        font-size: 12px;
     }
 }
 
 @media (min-width: 601px) and (max-width: 992px) {
-    .event_main_page .game_heading {
-        margin-top: 25%;
+    .profile_img {
+        width: 70%;
+    }
+    .profile_img img {
+        position: unset !important;
     }
 }
 
-@media screen and (max-width: 600px) {
-    .event_main_page .game_heading {
-        margin-top: 35%;
-    }
-}
+@media screen and (max-width: 600px) {}
 
 @media screen and (max-width: 450px) {
     caption {

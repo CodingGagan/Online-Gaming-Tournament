@@ -1,0 +1,107 @@
+*,
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar Content */
+.profile_icon .profile_icon_img {
+    height: 45px;
+    width: 45px;
+    overflow: hidden;
+    border-radius: 50%;
+    position: relative;
+}
+
+.profile_icon_img img {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+
+
+/* right body content */
+.User_data {
+    position: relative;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: #131c29;
+}
+
+.table_heading {
+    position: absolute;
+    width: 8%;
+    height: 11%;
+    text-align: center;
+    line-height: 65px;
+    font-size: 22px;
+    font-weight: lighter;
+    top: -5%;
+    left: 4%;
+    color: white;
+    border-radius: 4px;
+    background: linear-gradient(60deg, #ffa726, #fb8c00);
+}
+
+table {
+    font-size: 0.9em;
+    width: 100%;
+}
+
+table thead tr {
+    text-align: left;
+    font-weight: bold;
+    border-top: unset !important;
+    
+}
+
+table th,
+table td {
+    border-top: unset !important;
+    border-bottom: unset !important;
+    text-align: center;
+}
+
+.page_heading {
+    margin-top: 6rem !important;
+}
+
+.search-box {
+    display : unset;
+}
+
+.select {
+    margin-top: 3.5rem;
+}
+
+.select > select {
+    display: unset !important;
+    width: 200px;
+}
+
+.box, select {
+    border: unset !important;
+    outline: unset !important;
+
+    height: 40px;
+    width: 200px;
+}
+
+.search-box i {
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 50%;
+    right: 0px;
+    top: 2px;
+    position: absolute;
+}
+
+
+table .btn {
+    width: 100px;
+}
