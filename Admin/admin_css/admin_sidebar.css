@@ -1,3 +1,5 @@
+/* In Medium screen or above -> .active means collapse and < 768px .active means un-coolapse item or element */
+
 *, html, body {
     margin: 0;
     padding: 0;
@@ -36,12 +38,12 @@ a, a:hover, a:focus {
 
 .top_navbar {
     background-color: #192231;
-    width: calc(100% - 250px);
+    width: 100%;
     transition: .1s ease-out;
 }
 
 #content.active .top_navbar {
-    width: 100%;
+    width: calc(100% - 250px);
     transition: .1s ease-in;
 }
 
@@ -77,10 +79,11 @@ a, a:hover, a:focus {
 }
 
 #sidebar.active {
-    margin-left: -250px;
+    margin-left: 0px;
 }
 
 #sidebar {
+    margin-left: -250px;
     width: 250px;
     min-height: 100vh;
     position: fixed;
@@ -90,11 +93,13 @@ a, a:hover, a:focus {
 }
 
 #content.active {
-    width: 100%;
+    width: calc(100% - 250px);
+    /* background-color: red; */
 }
 
 #content {
-    width: calc(100% - 250px);
+    /* width: calc(100% - 250px); */
+    width: 100%;
     padding: 0px 10px 5px 10px;
     min-height: 100vh;
     transition: all 0.3s;
@@ -103,20 +108,7 @@ a, a:hover, a:focus {
     right: 0;
 }
 
-a[data-toggle="collapse"] {
-    position: relative;
-}
-
-.dropdown-toggle::after {
-    display: block;
-    position: absolute;
-    top: 50%;
-    right: 20px;
-    transform: translateY(-50%);
-}
-
 #sidebar {
-    /* don't forget to add all the previously mentioned styles here too */
     background: #131c29;
     color: #fff;
     transition: all 0.3s;
@@ -159,15 +151,29 @@ ul ul a {
     background: #131c29;
 }
 
+a[data-toggle="collapse"] {
+    position: relative;
+}
+
+.dropdown-toggle::after {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
 @media (max-width: 768px) {
     #sidebar {
         margin-left: -250px;
     }
     #content {
         width: 100%;
+        padding: 0px 10px 5px 0px;
     }
     #content.active {
-        width: calc(100% - 250px);
+        /* width: calc(100% - 250px); */
+        width: 100%;
     }
     #sidebar.active {
         margin-left: 0;
@@ -176,7 +182,8 @@ ul ul a {
         width: 100%;
     }
     #content.active .top_navbar {
-        width: calc(100% - 250px);
+        /* width: calc(100% - 250px); */
+        width: 100%;
     }
     #content.active .profile {
         display: none !important;

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <script src="../Jquery/jquery-3.4.1.js"></script>
+    <script src="../js/bootstrap.js"></script>
+    <link rel="stylesheet" href="../Font/fontawesome-free-5.12.0-web/css/all.css">
+    <link rel="stylesheet" href="admin_css/admin_sidebar.css">
+    <link rel="stylesheet" href="../organizer/Org_navbar.css">
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <!-- Sidebar -->
+        <nav id="sidebar">
+
+            <div class="sidebar-header">
+                <h3>BLOODSHED</h3>
+            </div>
+
+            <ul class="list-unstyled components">
+                <p>BLOODSHED</p>
+                <li class="active">
+                    <a href="#homeSubmenu" data-toggle="collapse" class="dropdown-toggle">Dashboard</a>
+                    <ul class="collapse list-unstyled" id="homeSubmenu">
+                        <li>
+                            <a href="#">Home 1</a>
+                        </li>
+                        <li>
+                            <a href="#">Home 2</a>
+                        </li>
+                        <li>
+                            <a href="#">Home 3</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Website pages</a>
+                </li>
+                <li>
+                    <a href="#pageSubmenu" data-toggle="collapse" class="dropdown-toggle">User Module</a>
+                    <ul class="collapse list-unstyled" id="pageSubmenu">
+                        <li>
+                            <a href="#">Page 1</a>
+                        </li>
+                        <li>
+                            <a href="#">Page 2</a>
+                        </li>
+                        <li>
+                            <a href="#">Page 3</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Admin Module</a>
+                </li>
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+            </ul>
+
+        </nav>
+        <!-- Page Content -->
+        <div id="content">
+            <!-- sidebar button -->
+            <div class="top_navbar position-fixed" style="z-index: 1111;">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <ul class="nav navbar_button">
+                        <li class="nav-item">
+                            <a href="#!" type="button" id="sidebarCollapse" class="btn bg-dark text-white">
+                                <i class="fas fa-align-left"></i>
+                                <span></span>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- <a class="navbar-brand navbar-logo" href="#">Bloodshed</a> -->
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-bars text-white"></i>
+                    </button>
+                    <div class="collapse navbar-collapse mx-auto pl-3" id="navbarSupportedContent">
+                        <ul class="navbar-nav mx-auto">
+                            <div class="hori-selector">
+                                <div class="left"></div>
+                                <div class="right"></div>
+                            </div>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../Index.html"><i
+                                        class="fas fa-tachometer-alt"></i>Dashboard</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="javascript:void(0);"><i
+                                        class="far fa-address-book"></i>Games</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="javascript:void(0);"><i class="far fa-clone"></i>Events</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="javascript:void(0);"><i
+                                        class="far fa-calendar-alt"></i>Leaderboard</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="javascript:void(0);"><i class="far fa-chart-bar"></i>About
+                                    us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="javascript:void(0);"><i class="far fa-copy"></i>Documents</a>
+                            </li>
+                        </ul>
+
+                        <div class="nav-item profile_navbar w-25 d-flex mr-auto">
+                            <div class="profile">
+                                <!-- <img src="../images/profile.jpg" style="height: 100%; width: 100%;" alt=""> -->
+                            </div>
+                            <div class="profile_info text-white pl-2">
+                                <span class="username d-block">GAGANDEEP SINGH</span>
+                                <span class="user_status d-block position-relative">ONLINE</span>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+
+
+
+        </div>
+    </div>
+    <!-- Javascript -->
+    <script src="../Admin/admin_js/sidebar.js"></script>
+    <script src="../JavaScript/Organizer_menu.js"></script>
+</body>
+
+</html>
