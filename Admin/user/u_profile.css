@@ -1,4 +1,6 @@
-*, html, body {
+*,
+html,
+body {
     margin: 0;
     padding: 0;
 }
@@ -11,6 +13,7 @@ body {
     width: 100%
 }
 
+
 /* user_table_content */
 
 .user_table_content .form-control {
@@ -20,9 +23,11 @@ body {
 
 
 /* Page_heading */
+
 .page_heading {
     margin-top: 6rem;
 }
+
 
 /* table top div logo */
 
@@ -32,7 +37,6 @@ body {
     background-color: #131c29;
     margin-top: 3.5rem;
     width: 100%;
-    /* overflow-x: scroll !important; */
 }
 
 .table_heading {

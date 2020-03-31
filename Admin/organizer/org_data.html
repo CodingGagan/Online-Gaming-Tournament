@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../css/bootstrap.css">
+    <script src="../../Jquery/jquery-3.4.1.js"></script>
+    <script src="../../js/bootstrap.js"></script>
+    <link rel="stylesheet" href="../../Font/fontawesome-free-5.12.0-web/css/all.css">
+    <link rel="stylesheet" href="org_data.css">
+    <link rel="stylesheet" href="../admin_css/admin_sidebar.css">
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- Sidebar -->
+        <nav id="sidebar">
+
+            <div class="sidebar-header">
+                <h3>BLOODSHED</h3>
+            </div>
+
+            <ul class="list-unstyled components">
+                <p>BLOODSHED</p>
+                <li class="active">
+                    <a href="#homeSubmenu" data-toggle="collapse" class="dropdown-toggle">Dashboard</a>
+                    <ul class="collapse list-unstyled" id="homeSubmenu">
+                        <li>
+                            <a href="#">Home 1</a>
+                        </li>
+                        <li>
+                            <a href="#">Home 2</a>
+                        </li>
+                        <li>
+                            <a href="#">Home 3</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Website pages</a>
+                </li>
+                <li>
+                    <a href="#pageSubmenu" data-toggle="collapse" class="dropdown-toggle">User Module</a>
+                    <ul class="collapse list-unstyled" id="pageSubmenu">
+                        <li>
+                            <a href="#">Page 1</a>
+                        </li>
+                        <li>
+                            <a href="#">Page 2</a>
+                        </li>
+                        <li>
+                            <a href="#">Page 3</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Admin Module</a>
+                </li>
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+            </ul>
+
+        </nav>
+        <!-- Page Content -->
+        <div id="content">
+            <!-- sidebar button -->
+            <div class="top_navbar position-fixed" style="z-index: 1111;">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <ul class="nav navbar_button">
+                        <li class="nav-item">
+                            <a href="#!" type="button" id="sidebarCollapse" class="btn bg-dark text-white">
+                                <i class="fas fa-align-left"></i>
+                                <span></span>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="nav ml-auto profile">
+                        <li class="nav-item profile_icon">
+                            <span class="profile_icon_img">
+                                <a href="#!">
+                                    <img src="../../images/profile.jpg" alt="">
+                                </a>
+                            </span>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <p class="">Gagandeep Singh</p>
+                                <p>Online</p>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+
+
+            <!-- dashboard heading -->
+            <div class="page_heading text-white">
+                <h2>Organizer Module</h2>
+            </div>
+
+            <!-- Input Fields -->
+            <div class="container mx-auto input_field">
+                <div class="row p-0 m-0">
+                    <div class="col-10 col-sm-12 col-md-4 mx-auto">
+                        <div class="search-box position-relative">
+                            <input type="text" class="box form-control mx-auto" placeholder="search here">
+                            <i class="fas fa-search"></i>
+                        </div>
+                    </div>
+
+                    <div class="select col-10 mx-auto col-md-4">
+                        <select class="form-control mx-auto">
+                            <option value="">Select status</option>
+                            <option value="Active">Active</option>
+                            <option value="inactive">inactive</option>
+                        </select>
+                    </div>
+
+                    <div class="select col-10 mx-auto col-md-4">
+                        <select class="form-control mx-auto">
+                            <option value="">Select Game</option>
+                            <option value="fortnite">Fortnite</option>
+                            <option value="Pubg">Pubg</option>
+                            <option value="freefire">Freefire</option>
+                            <option value="call of duty">call of duty</option>
+                        </select>
+                    </div>
+
+                </div>
+            </div>
+            <!-- Body Content -->
+            <div class="container-fluid user_table_content">
+                <div class="row">
+                    <div class="col-12 p-0">
+                        <div class="User_data">
+                            <div class="table_heading">
+                                <i class="fas fa-table"></i>
+                            </div>
+                            <table class="table text-white">
+                                <caption class="text-white pl-3">Organizer's Info</caption>
+                                <thead>
+                                    <tr>
+                                        <th>Index</th>
+                                        <th>Name</th>
+                                        <th>Email</th>
+                                        <th>Status</th>
+                                        <th>Role</th>
+                                        <th>View profile</th>
+                                        <th>Delete</th>
+
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>aman</td>
+                                        <td>aman12@gamil.com</td>
+
+                                        <td>User</td>
+                                        <td>
+                                            <p class="btn btn-success">Active</p>
+                                        </td>
+                                        <td><button class="btn btn-warning">View profile</button></td>
+                                        <td><button class="btn btn-danger">Delete</button></td>
+
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>aman</td>
+                                        <td>aman12@gamil.com</td>
+                                        <td>User</td>
+                                        <td><button class="btn btn-danger">inactive</button></td>
+
+                                        <td><button class="btn btn-warning">View profile</button></td>
+                                        <td><button class="btn btn-danger">Delete</button></td>
+
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>aman</td>
+                                        <td>aman12@gamil.com</td>
+                                        <td>User</td>
+                                        <td><button class="btn btn-success">Active</button></td>
+
+                                        <td><button class="btn btn-danger">View profile</button></td>
+                                        <td><button class="btn btn-danger">Delete</button></td>
+
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>aman</td>
+                                        <td>aman12@gamil.com</td>
+                                        <td>User</td>
+                                        <td><button class="btn btn-success">Active</button></td>
+
+                                        <td><button class="btn btn-danger">View profile</button></td>
+                                        <td><button class="btn btn-danger">Delete</button></td>
+
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>aman</td>
+                                        <td>aman12@gamil.com</td>
+                                        <td>User</td>
+                                        <td><button class="btn btn-danger">inactive</button></td>
+
+                                        <td><button class="btn btn-danger">View profile</button></td>
+                                        <td><button class="btn btn-danger">Delete</button></td>
+
+                                    </tr>
+
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- Javascript -->
+    <script src="../admin_js/sidebar.js"></script>
+</body>
+
+</html>

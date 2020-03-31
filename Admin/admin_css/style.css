@@ -1,12 +1,16 @@
+@import "../../global_import.css";
+
 *,
 html,
 body {
     margin: 0;
     padding: 0;
+    font-family: 'Rokkitt', serif;
 }
 
 html {
     scroll-behavior: smooth;
+    font-family: 'Rokkitt', serif;
 }
 
 body {
@@ -14,11 +18,19 @@ body {
     background: #192231;
 }
 
+h1, h2 {
+    font-family: 'Audiowide', cursive;
+}
+
+h3,h4,h5 {
+    font-family: 'Poly', serif;
+}
+
 
 /* Body Content */
 
 .page_heading {
-    margin-top: 4rem;
+    margin-top: 6rem;
     color: seashell;
 }
 
@@ -69,10 +81,44 @@ body {
 /* Website summary */
 
 .website_summary {
-    overflow-x: scroll;
+    position: relative;
+    padding-bottom: 30px;
+    background-color: #131c29;
+    margin-top: 3.5rem;
+    width: 100%;
 }
 
-.website_summary::-webkit-scrollbar {
-    height: 3px;
-    background: transparent;
+
+/* table top div logo */
+
+.table_heading {
+    position: absolute;
+    width: 65px;
+    height: 65px;
+    text-align: center;
+    line-height: 65px;
+    font-size: 22px;
+    font-weight: lighter;
+    top: -34px;
+    left: 26px;
+    color: white;
+    border-radius: 4px;
+    background: linear-gradient(60deg, #ffa726, #fb8c00);
+}
+
+
+/* Media Queries */
+
+@media (max-width: 768px) {
+    .website_summary {
+        overflow-x: scroll;
+    }
+    .website_summary::-webkit-scrollbar {
+        height: 3px;
+        background: transparent;
+    }
+    .table_heading {
+        top: 0px;
+        left: 26px;
+    }
 }

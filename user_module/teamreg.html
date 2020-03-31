@@ -5,13 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <script src="Jquery/jquery-3.4.1.js"></script>
-    <script src="js/bootstrap.js"></script>
-    <script src="Font/fontawesome-free-5.12.0-web/css/all.css"></script>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <script src="../Jquery/jquery-3.4.1.js"></script>
+    <script src="../js/bootstrap.js"></script>
+    <script src="../Font/fontawesome-free-5.12.0-web/css/all.css"></script>
     <link rel="stylesheet" type="text/css" href="gameteam.css">
-    <link rel="stylesheet" href="header.css">
-    <link rel="stylesheet" href="foot.css">
+    <link rel="stylesheet" href="../header.css">
+    <link rel="stylesheet" href="../foot.css">
 </head>
 
 <body>
@@ -76,11 +76,14 @@
             <!-- This div use for left and right image -->
             <div class="bg-pos"></div>
             <div class="header_outer_area">
-                <a id="xs-navbar-brand" href="#" class="navbar-brand nav-brand-xs w-100 d-block position-fixed d-lg-none">
-                    <img src="https://www.iglnetwork.com/assets/images/logo.png" class="d-block mx-auto" alt="Brand Image">
+                <a id="xs-navbar-brand" href="#"
+                    class="navbar-brand nav-brand-xs w-100 d-block position-fixed d-lg-none">
+                    <img src="https://www.iglnetwork.com/assets/images/logo.png" class="d-block mx-auto"
+                        alt="Brand Image">
                 </a>
                 <header id="navbar-header" class="main-navbar navbar navbar-expand-lg ">
-                    <button id="navbar-toggle" class="navbar-toggler navbar-light" data-target='#navbar-hide' data-toggle="collapse">
+                    <button id="navbar-toggle" class="navbar-toggler navbar-light" data-target='#navbar-hide'
+                        data-toggle="collapse">
                         <span class="navbar-toggler-icon"></span>
                     </button>
 
@@ -95,7 +98,8 @@
                         </ul>
                         <!-- Navbar Brand  -->
                         <div class="nav-brand-div">
-                            <a href="index.html" class="brnd-pos navbar-brand d-none position-absolute d-lg-block mx-auto">
+                            <a href="index.html"
+                                class="brnd-pos navbar-brand d-none position-absolute d-lg-block mx-auto">
                                 <img src="https://www.iglnetwork.com/assets/images/logo.png" alt="">
                             </a>
                         </div>
@@ -117,24 +121,38 @@
         </div>
     </div>
 
-    <!-- Jumbotron -->
-    <div class="container-fluid jumbotron_second position-relative">
-        <div class="row m-0 p-0">
-            <div class="col-12 position-absolute user_name_section">
-                <!-- User's Stats -->
-                <div class="user_name">
-                    <h1>
-                        bhagatkaran <br> CURRENT BALANCE: 0 IGL COINS
-                    </h1>
+    <!-- Navbar -->
+    <div class="container-fluid position-relative">
+        <div class="row">
+            <div class="col-md-12 rat">
+
+            </div>
+
+            <!-- Profile Picture -->
+            <div class="col-md-12  fat">
+                <div class="center button" onmouseover="button()">
+                    <img alt="person image" src="../images/profile.jpg">
+                </div>
+
+                <div class="first center popout">
+                    <img src="https://img.icons8.com/dotty/50/000000/edit-property.png" /> </div>
+
+                <div class="second center popout">
+                    <img src="https://img.icons8.com/dotty/80/000000/edit-image.png" /> </div>
+
+                <div class="third center popout">
+                    <img src="https://img.icons8.com/cute-clipart/64/000000/calendar.png" />
+                </div>
+
+                <div class="fourth center popout">
+                    <img src="https://img.icons8.com/dusk/64/000000/bell.png" />
+                </div>
+
+                <div class="fifth center popout">
+                    <img src="https://img.icons8.com/cute-clipart/64/000000/settings.png" />
                 </div>
             </div>
 
-            <!-- Profile Pic -->
-            <div class="col-md-12  pro_pic">
-                <span>
-                    <i class="fas fa-camera camera"></i>
-                </span>
-            </div>
         </div>
     </div>
 
@@ -538,6 +556,12 @@
         </div>
     </footer>
     <script src="JavaScript/Home.js"></script>
+    <script>
+        function button() {
+
+            document.getElementsByClassName("button")[0].classList.toggle("spin");
+        }
+    </script>
 </body>
 
 </html>

@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Priviligies</title>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <script src="../Jquery/jquery-3.4.1.js"></script>
+    <script src="../js/bootstrap.js"></script>
+    <link rel="stylesheet" href="../Font/fontawesome-free-5.12.0-web/css/all.css">
+    <link rel="stylesheet" href="admin_css/admin_sidebar.css">
+    <link rel="stylesheet" href="admin_css/event_granted.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- Sidebar -->
+        <nav id="sidebar">
+
+            <div class="sidebar-header">
+                <h3>BLOODSHED</h3>
+            </div>
+
+            <ul class="list-unstyled components">
+                <p>BLOODSHED</p>
+                <li>
+                    <a href="index.html">Dashboard</a>
+                </li>
+                <li>
+                    <a href="#">Event Privilige</a>
+                </li>
+                <li class="active">
+                    <a href="#homeSubmenu" data-toggle="collapse" class="dropdown-toggle">Website Pages</a>
+                    <ul class="collapse list-unstyled" id="homeSubmenu">
+                        <li>
+                            <a href="#">Home Page</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="#pageSubmenu" data-toggle="collapse" class="dropdown-toggle">User Module</a>
+                    <ul class="collapse list-unstyled" id="pageSubmenu">
+                        <li>
+                            <a href="user/user_data.html">User profile</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#org" data-toggle="collapse" class="dropdown-toggle">Organizer Module</a>
+                    <ul class="collapse list-unstyled" id="org">
+                        <li>
+                            <a href="organizer/org_data.html">Organizer Profile</a>
+                        </li>
+                        <li>
+                            <a href="#">Organizer events</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+            </ul>
+
+        </nav>
+        <!-- Page Content -->
+        <div id="content">
+            <!-- sidebar button -->
+            <div class="top_navbar position-fixed" style="z-index: 1111;">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <ul class="nav navbar_button">
+                        <li class="nav-item">
+                            <a href="#!" type="button" id="sidebarCollapse" class="btn bg-dark text-white">
+                                <i class="fas fa-align-left"></i>
+                                <span></span>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="nav ml-auto profile">
+                        <li class="nav-item profile_icon">
+                            <span class="profile_icon_img">
+                                <a href="#!">
+                                    <img src="../images/profile.jpg" alt="">
+                                </a>
+                            </span>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <p class="">Gagandeep Singh</p>
+                                <p>Online</p>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+
+            <!-- dashboard heading -->
+            <div class="page_heading">
+                <h2>Recently Punched Event</h2>
+            </div>
+
+            <!-- Tabs -->
+            <div class="tabs events">
+                <ul class="diamond-cut">
+                    <li><a href="#tab1">
+                            <span>Weekly</span></a></li>
+                    <li><a href="#tab2">
+                            <span>Monthly</span></a></li>
+                    <li><a href="#tab3">
+                            <span>Later on</span></a></li>
+                </ul>
+                <div class="contents">
+                    <div id="tab1">
+                        <table class="table text-white text-center">
+                            <thead>
+                                <th>Index</th>
+                                <th>Organizer Name</th>
+                                <th>Game</th>
+                                <th>Date</th>
+                                <th>Action</th>
+                                <th>View More Info</th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Subhash Chander Bosh</td>
+                                    <td>Khonni</td>
+                                    <td>24-05-2020</td>
+                                    <td>
+                                        <label class="switch">
+                                            <input type="checkbox" name="active">
+                                            <span class="slider">
+                                                <span class="yes">Posted</span>
+                                                <span class="no">Unposted</span>
+                                            </span>
+                                        </label>
+                                    </td>
+                                    <td><a href="#!" class="btn btn-warning">View</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                    </div>
+
+                    <div id="tab2">
+                        <table class="table text-white text-center">
+                            <thead>
+                                <th>Index</th>
+                                <th>Organizer Name</th>
+                                <th>Game</th>
+                                <th>Date</th>
+                                <th>Action</th>
+                                <th>View More Info</th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Subhash Chander Bosh</td>
+                                    <td>Khonni</td>
+                                    <td>24-05-2020</td>
+                                    <td>
+                                        <label class="switch">
+                                            <input type="checkbox" name="active">
+                                            <span class="slider">
+                                                <span class="yes">Posted</span>
+                                                <span class="no">Unposted</span>
+                                            </span>
+                                        </label>
+                                    </td>
+                                    <td><a href="#!" class="btn btn-warning">View</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                    </div>
+
+                    <div id="tab3">
+                        <table class="table text-white text-center">
+                            <thead>
+                                <th>Index</th>
+                                <th>Organizer Name</th>
+                                <th>Game</th>
+                                <th>Date</th>
+                                <th>Action</th>
+                                <th>View More Info</th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Subhash Chander Bosh</td>
+                                    <td>Khonni</td>
+                                    <td>24-05-2020</td>
+                                    <td>
+                                        <label class="switch">
+                                            <input type="checkbox" name="active">
+                                            <span class="slider">
+                                                <span class="yes">Posted</span>
+                                                <span class="no">Unposted</span>
+                                            </span>
+                                        </label>
+                                    </td>
+                                    <td><a href="#!" class="btn btn-warning">View</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Javascript -->
+    <script src="admin_js/sidebar.js "></script>
+    <script type="text/javascript">
+
+
+        $(function () {
+            $(".tabs").tabs({
+                show: { effect: "fade", direction: "right" },
+                hide: {}
+            });
+        });
+
+    </script>
+</body>
+
+</html>

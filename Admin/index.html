@@ -25,7 +25,7 @@
             <ul class="list-unstyled components">
                 <p>BLOODSHED</p>
                 <li>
-                    <a href="#">Dashboard</a>
+                    <a href="index.html">Dashboard</a>
                 </li>
                 <li>
                     <a href="#">Event Privilige</a>
@@ -43,10 +43,7 @@
                     <a href="#pageSubmenu" data-toggle="collapse" class="dropdown-toggle">User Module</a>
                     <ul class="collapse list-unstyled" id="pageSubmenu">
                         <li>
-                            <a href="#">User profile</a>
-                        </li>
-                        <li>
-                            <a href="#">User events</a>
+                            <a href="user/user_data.html">User profile</a>
                         </li>
                     </ul>
                 </li>
@@ -54,7 +51,7 @@
                     <a href="#org" data-toggle="collapse" class="dropdown-toggle">Organizer Module</a>
                     <ul class="collapse list-unstyled" id="org">
                         <li>
-                            <a href="#">Organizer Profile</a>
+                            <a href="organizer/org_data.html">Organizer Profile</a>
                         </li>
                         <li>
                             <a href="#">Organizer events</a>
@@ -70,16 +67,34 @@
         <!-- Page Content -->
         <div id="content">
             <!-- sidebar button -->
-            <nav class="navbar navbar-expand-lg navbar-light position-fixed w-100"
-                style="z-index: 1111; background: #192231;">
-                <div class="container-fluid">
+            <div class="top_navbar position-fixed" style="z-index: 1111;">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <ul class="nav navbar_button">
+                        <li class="nav-item">
+                            <a href="#!" type="button" id="sidebarCollapse" class="btn bg-dark text-white">
+                                <i class="fas fa-align-left"></i>
+                                <span></span>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="nav ml-auto profile">
+                        <li class="nav-item profile_icon">
+                            <span class="profile_icon_img">
+                                <a href="#!">
+                                    <img src="../images/profile.jpg" alt="">
+                                </a>
+                            </span>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <p class="">Gagandeep Singh</p>
+                                <p>Online</p>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
 
-                    <button type="button" id="sidebarCollapse" class="btn bg-dark text-white">
-                        <i class="fas fa-align-left"></i>
-                        <span></span>
-                    </button>
-                </div>
-            </nav>
 
             <!-- dashboard heading -->
             <div class="page_heading">
@@ -158,8 +173,11 @@
 
             <!-- website summary -->
             <div class="container-fluid website_summary mt-5">
+                <div class="table_heading">
+                    <i class="fas fa-table"></i>
+                </div>
                 <table class="table text-white text-center ">
-                    <caption style="caption-side: top; ">Website summary</caption>
+                    <caption style="caption-side: top; text-align: center;">Website summary</caption>
                     <thead>
                         <th>
                             Role
@@ -222,30 +240,6 @@
     <!-- Javascript -->
     <script src="admin_js/sidebar.js "></script>
     <script>
-        // var count = $(('#count'));
-        // $({
-        //     Counter: 0
-        // }).animate({
-        //     Counter: count.text()
-        // }, {
-        //     duration: 5000,
-        //     easing: 'linear',
-        //     step: function() {
-        //         count.text(Math.ceil(this.Counter) + "% ");
-        //     }
-        // });
-
-        // var s = Snap('#animated');
-        // var progress = s.select('#progress');
-
-        // progress.attr({
-        //     strokeDasharray: '0, 251.2'
-        // });
-        // Snap.animate(0, 251.2, function(value) {
-        //     progress.attr({
-        //         'stroke-dasharray': value + ',251.2'
-        //     });
-        // }, 5000);
     </script>
 </body>
 
